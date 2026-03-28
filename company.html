@@ -41,6 +41,11 @@
     .facts-body tr:hover { background: #fafafa; }
     .val-pos { color: #2e7d32; }
     .val-neg { color: #c62828; }
+    .new-filing { border-left: 3px solid #4CAF50; }
+    .new-filing .filing-header { background: #f1f8e9; }
+    .new-fact { background: #f1f8e9; }
+    .new-badge { background: #4CAF50; color: white; font-size: 0.65em; padding: 2px 6px;
+                  border-radius: 3px; margin-left: 8px; font-weight: 600; }
     .footer { text-align: center; color: #bbb; font-size: 0.75em; margin-top: 20px; }
     .loading { text-align: center; color: #aaa; padding: 40px; }
 </style>
@@ -48,7 +53,7 @@
 <body>
 <div class="container">
     <div id="content"><div class="loading">Lade Firmendaten...</div></div>
-    <div class="footer">Seite generiert: 2026-03-28 08:15:18</div>
+    <div class="footer">Seite generiert: 2026-03-28 08:20:07</div>
 </div>
 <script>
 (function() {
@@ -75,6 +80,9 @@
 
     function render(cik, company) {
         var facts = company.facts;
+        var newAccn = {};
+        (company.new_accessions || []).forEach(function(a) { newAccn[a] = true; });
+        var hasNewAccn = Object.keys(newAccn).length > 0;
 
         // Nach Accession (=Filing) gruppieren
         var filings = {};
@@ -84,7 +92,7 @@
             if (!filings[key]) {
                 filings[key] = {
                     form: f.form, filed: f.filed, accession: f.accession,
-                    fy: f.fy, fp: f.fp, facts: []
+                    fy: f.fy, fp: f.fp, facts: [], isNew: !!newAccn[key]
                 };
                 filingOrder.push(key);
             }
@@ -93,6 +101,7 @@
 
         // Stats
         var uniqueFilings = filingOrder.length;
+        var newFilings = filingOrder.filter(function(k) { return filings[k].isNew; }).length;
         var latestFiled = facts.length > 0 ? facts[0].filed : '-';
 
         var html = '<h1>' + (company.ticker || 'CIK ' + cik) + ' — ' + company.name + '</h1>';
@@ -101,6 +110,7 @@
         html += '<div class="stats">';
         html += '<div class="stat"><div class="val">' + facts.length.toLocaleString() + '</div><div class="lbl">Financial Facts</div></div>';
         html += '<div class="stat"><div class="val">' + uniqueFilings + '</div><div class="lbl">SEC Filings</div></div>';
+        if (hasNewAccn) html += '<div class="stat"><div class="val" style="color:#4CAF50">' + newFilings + '</div><div class="lbl">Neue Filings</div></div>';
         html += '<div class="stat"><div class="val">' + latestFiled + '</div><div class="lbl">Letztes Filing</div></div>';
         html += '</div>';
 
@@ -108,7 +118,8 @@
         filingOrder.forEach(function(key, idx) {
             var filing = filings[key];
             var isFirst = idx === 0;
-            html += '<div class="card">';
+            var isNew = filing.isNew;
+            html += '<div class="card' + (isNew ? ' new-filing' : '') + '">';
             html += '<div class="filing-header" onclick="toggleFiling(this)">';
             html += '<span class="filing-icon' + (isFirst ? ' open' : '') + '">&#9654;</span>';
             html += '<span class="filing-form">' + (filing.form || '-') + '</span>';
@@ -116,6 +127,7 @@
             html += '<span class="filing-filed">FY' + (filing.fy || '?') + ' ' + (filing.fp || '') + '</span>';
             html += '<span class="filing-accn">' + (filing.accession || '') + '</span>';
             html += '<span class="filing-count">' + filing.facts.length + ' Records</span>';
+            if (isNew) html += '<span class="new-badge">NEU</span>';
             html += '</div>';
 
             html += '<div class="facts-body" style="' + (isFirst ? 'display:block' : 'display:none') + '">';
@@ -125,7 +137,7 @@
                 var valStr = (typeof val === 'number') ? val.toLocaleString('de-DE') : String(val);
                 var valClass = (typeof val === 'number' && val < 0) ? 'val-neg' : (typeof val === 'number' && val > 0) ? 'val-pos' : '';
                 var period = f.start_date ? (f.start_date + ' — ' + f.end_date) : f.end_date;
-                html += '<tr>';
+                html += '<tr' + (isNew ? ' class="new-fact"' : '') + '>';
                 html += '<td><b>' + f.concept + '</b></td>';
                 html += '<td style="color:#888;font-size:0.9em">' + (f.label || '') + '</td>';
                 html += '<td style="text-align:right" class="' + valClass + '">' + valStr + '</td>';

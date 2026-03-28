@@ -28,6 +28,8 @@
                          color: #888; font-weight: 600; font-size: 0.8em; text-transform: uppercase; }
     .details-table td { padding: 8px; border-bottom: 1px solid #f0f0f0; }
     .company-row:hover { background: #f8f8f8; }
+    .company-link { color: #2196F3; text-decoration: none; }
+    .company-link:hover { text-decoration: underline; }
     .toggle-icon { font-size: 0.7em; color: #aaa; transition: transform 0.2s; display: inline-block; }
     .toggle-icon.open { transform: rotate(90deg); }
     .facts-table { width: 100%; border-collapse: collapse; font-size: 0.82em; margin: 8px 0; }
@@ -126,562 +128,898 @@ function toggleFacts(row) {
                 <table class="details-table">
                     <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>EPAC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=6955&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>EPAC</b></a>
+                    </td>
                     <td>ENERPAC TOOL GROUP CORP</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>DDS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=28917&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>DDS</b></a>
+                    </td>
                     <td>DILLARD'S, INC.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>OXM</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=75288&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>OXM</b></a>
+                    </td>
                     <td>OXFORD INDUSTRIES INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>UG</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=101295&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>UG</b></a>
+                    </td>
                     <td>UNITED GUARDIAN INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>PBT</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=319654&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>PBT</b></a>
+                    </td>
                     <td>PERMIAN BASIN ROYALTY TRUST</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SJT</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=319655&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SJT</b></a>
+                    </td>
                     <td>SAN JUAN BASIN ROYALTY TRUST</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>UTMD</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=706698&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>UTMD</b></a>
+                    </td>
                     <td>UTAH MEDICAL PRODUCTS INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>AROW</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=717538&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>AROW</b></a>
+                    </td>
                     <td>ARROW FINANCIAL CORP</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CMTV</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=718413&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CMTV</b></a>
+                    </td>
                     <td>COMMUNITY BANCORP /VT</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>M</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=794367&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>M</b></a>
+                    </td>
                     <td>Macy's, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>NKSH</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=796534&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>NKSH</b></a>
+                    </td>
                     <td>NATIONAL BANKSHARES INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>VBIX</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=797542&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>VBIX</b></a>
+                    </td>
                     <td>Viewbix Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CCL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=815097&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CCL</b></a>
+                    </td>
                     <td>CARNIVAL CORP</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CRT</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=881787&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CRT</b></a>
+                    </td>
                     <td>CROSS TIMBERS ROYALTY TRUST</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>QUIK</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=882508&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>QUIK</b></a>
+                    </td>
                     <td>QUICKLOGIC Corp</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>STRS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=885508&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>STRS</b></a>
+                    </td>
                     <td>STRATUS PROPERTIES INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ENVB</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=890821&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ENVB</b></a>
+                    </td>
                     <td>Enveric Biosciences, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>DRI</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=940944&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>DRI</b></a>
+                    </td>
                     <td>DARDEN RESTAURANTS INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>RVP</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=946563&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>RVP</b></a>
+                    </td>
                     <td>RETRACTABLE TECHNOLOGIES INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>AIM</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=946644&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>AIM</b></a>
+                    </td>
                     <td>AIM ImmunoTech Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>AIRI</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1009891&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>AIRI</b></a>
+                    </td>
                     <td>AIR INDUSTRIES GROUP</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>INVA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1080014&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>INVA</b></a>
+                    </td>
                     <td>Innoviva, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>LOAN</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1080340&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>LOAN</b></a>
+                    </td>
                     <td>MANHATTAN BRIDGE CAPITAL, INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SQFT</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1080657&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SQFT</b></a>
+                    </td>
                     <td>Presidio Property Trust, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>DKS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1089063&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>DKS</b></a>
+                    </td>
                     <td>DICK'S SPORTING GOODS, INC.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ONTF</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1110611&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ONTF</b></a>
+                    </td>
                     <td>ON24 INC.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CUK</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1125259&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CUK</b></a>
+                    </td>
                     <td>CARNIVAL PLC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>FENC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1211583&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>FENC</b></a>
+                    </td>
                     <td>FENNEC PHARMACEUTICALS INC.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BOTJ</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1275101&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BOTJ</b></a>
+                    </td>
                     <td>BANK OF THE JAMES FINANCIAL GROUP INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>DLPN</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1282224&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>DLPN</b></a>
+                    </td>
                     <td>Dolphin Entertainment, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BVFL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1302387&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BVFL</b></a>
+                    </td>
                     <td>BV Financial, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CCO</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1334978&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CCO</b></a>
+                    </td>
                     <td>Clear Channel Outdoor Holdings, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>NPB</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1336706&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>NPB</b></a>
+                    </td>
                     <td>NORTHPOINTE BANCSHARES INC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>VRA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1495320&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>VRA</b></a>
+                    </td>
                     <td>Vera Bradley, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>PRHI</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1502292&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>PRHI</b></a>
+                    </td>
                     <td>Presurance Holdings, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>IPWR</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1507957&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>IPWR</b></a>
+                    </td>
                     <td>Ideal Power Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SILO</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1514183&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SILO</b></a>
+                    </td>
                     <td>Silo Pharma, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>OUNZ</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1546652&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>OUNZ</b></a>
+                    </td>
                     <td>VanEck Merk Gold ETF</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>TNON</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1560293&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>TNON</b></a>
+                    </td>
                     <td>Tenon Medical, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>INTS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1567264&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>INTS</b></a>
+                    </td>
                     <td>INTENSITY THERAPEUTICS, INC.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>VABK</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1572334&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>VABK</b></a>
+                    </td>
                     <td>Virginia National Bankshares Corp</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>GYRO</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1589061&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>GYRO</b></a>
+                    </td>
                     <td>Gyrodyne, LLC</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>FGNX</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1591890&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>FGNX</b></a>
+                    </td>
                     <td>FG Nexus Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ANY</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1591956&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ANY</b></a>
+                    </td>
                     <td>Sphere 3D Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SKYX</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1598981&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SKYX</b></a>
+                    </td>
                     <td>SKYX Platforms Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>KSCP</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1600983&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>KSCP</b></a>
+                    </td>
                     <td>Knightscope, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>PAVM</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1624326&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>PAVM</b></a>
+                    </td>
                     <td>PAVmed Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>GDC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1641398&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>GDC</b></a>
+                    </td>
                     <td>GD Culture Group Ltd</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>MNPR</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1645469&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>MNPR</b></a>
+                    </td>
                     <td>Monopar Therapeutics</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>KZR</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1645666&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>KZR</b></a>
+                    </td>
                     <td>Kezar Life Sciences, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BAFN</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1649739&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BAFN</b></a>
+                    </td>
                     <td>BayFirst Financial Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>PHUN</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1665300&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>PHUN</b></a>
+                    </td>
                     <td>Phunware, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>HYFM</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1695295&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>HYFM</b></a>
+                    </td>
                     <td>HYDROFARM HOLDINGS GROUP, INC.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SER</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1708599&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SER</b></a>
+                    </td>
                     <td>Serina Therapeutics, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BTBT</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1710350&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BTBT</b></a>
+                    </td>
                     <td>Bit Digital, Inc</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>HOTH</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1711786&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>HOTH</b></a>
+                    </td>
                     <td>Hoth Therapeutics, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BTAI</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1720893&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BTAI</b></a>
+                    </td>
                     <td>BioXcel Therapeutics, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>PRT</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1724009&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>PRT</b></a>
+                    </td>
                     <td>PermRock Royalty Trust</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>EPSN</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1726126&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>EPSN</b></a>
+                    </td>
                     <td>Epsilon Energy Ltd.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>AUTL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1730463&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>AUTL</b></a>
+                    </td>
                     <td>Autolus Therapeutics plc</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BTGO</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1740604&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BTGO</b></a>
+                    </td>
                     <td>BITGO HOLDINGS, INC.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ABTC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1755953&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ABTC</b></a>
+                    </td>
                     <td>American Bitcoin Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>HOWL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1785530&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>HOWL</b></a>
+                    </td>
                     <td>Werewolf Therapeutics, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BSBK</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1787414&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BSBK</b></a>
+                    </td>
                     <td>Bogota Financial Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>TIL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1789769&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>TIL</b></a>
+                    </td>
                     <td>Instil Bio, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>HUMA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1818382&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>HUMA</b></a>
+                    </td>
                     <td>Humacyte, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>FORA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1829280&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>FORA</b></a>
+                    </td>
                     <td>Forian Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>EMPD</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1829794&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>EMPD</b></a>
+                    </td>
                     <td>Empery Digital Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>MEHA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1837254&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>MEHA</b></a>
+                    </td>
                     <td>Functional Brands Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>HODL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1838028&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>HODL</b></a>
+                    </td>
                     <td>VanEck Bitcoin ETF</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>LOCL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1840780&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>LOCL</b></a>
+                    </td>
                     <td>Local Bounti Corporation/DE</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>VGAS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1841425&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>VGAS</b></a>
+                    </td>
                     <td>Verde Clean Fuels, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>BTCW</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1850391&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>BTCW</b></a>
+                    </td>
                     <td>WisdomTree Bitcoin Fund</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ANSC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1854149&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ANSC</b></a>
+                    </td>
                     <td>Agriculture & Natural Solutions Acquisition Corp</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SNTI</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1854270&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SNTI</b></a>
+                    </td>
                     <td>Senti Biosciences, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CLDI</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1855485&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CLDI</b></a>
+                    </td>
                     <td>Calidi Biotherapeutics, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>IMMX</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1873835&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>IMMX</b></a>
+                    </td>
                     <td>Immix Biopharma, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CYN</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1874097&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CYN</b></a>
+                    </td>
                     <td>Cyngn Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>NSTS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1881592&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>NSTS</b></a>
+                    </td>
                     <td>NSTS Bancorp, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SBC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=1930313&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SBC</b></a>
+                    </td>
                     <td>SBC Medical Group Holdings Inc</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ADGM</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2006986&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ADGM</b></a>
+                    </td>
                     <td>Adagio Medical Holdings, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SIMA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2014982&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SIMA</b></a>
+                    </td>
                     <td>SIM Acquisition Corp. I</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>LPAA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2015502&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>LPAA</b></a>
+                    </td>
                     <td>Launch One Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>LPBB</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2023676&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>LPBB</b></a>
+                    </td>
                     <td>Launch Two Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>VCIC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2025396&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>VCIC</b></a>
+                    </td>
                     <td>Vine Hill Capital Investment Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SOUL</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2025608&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SOUL</b></a>
+                    </td>
                     <td>Soulpower Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>KFII</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2029976&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>KFII</b></a>
+                    </td>
                     <td>K&F GROWTH ACQUISITION CORP. II</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>FUSE</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2033383&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>FUSE</b></a>
+                    </td>
                     <td>Fusemachines Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>JAGU</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2039273&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>JAGU</b></a>
+                    </td>
                     <td>Jaguar Uranium Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ALUB</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2041493&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ALUB</b></a>
+                    </td>
                     <td>Alussa Energy Acquisition Corp. II</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>EVAC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2042902&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>EVAC</b></a>
+                    </td>
                     <td>EQV Ventures Acquisition Corp. II</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>GSHR</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2044635&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>GSHR</b></a>
+                    </td>
                     <td>Gesher Acquisition Corp. II</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ONCH</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2054272&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ONCH</b></a>
+                    </td>
                     <td>1RT Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>RDAG</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2055459&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>RDAG</b></a>
+                    </td>
                     <td>Republic Digital Acquisition Co</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>AVBC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2058758&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>AVBC</b></a>
+                    </td>
                     <td>Avidia Bancorp, Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>ANDG</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2065708&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>ANDG</b></a>
+                    </td>
                     <td>Andersen Group Inc.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>HVMC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2070602&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>HVMC</b></a>
+                    </td>
                     <td>Highview Merger Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>CRAC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2070887&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>CRAC</b></a>
+                    </td>
                     <td>Crown Reserve Acquisition Corp. I</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>GSRF</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2072404&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>GSRF</b></a>
+                    </td>
                     <td>GSR IV Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>TLNC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2073340&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>TLNC</b></a>
+                    </td>
                     <td>Talon Capital Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>EMIS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2075816&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>EMIS</b></a>
+                    </td>
                     <td>Emmis Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>LATA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2076427&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>LATA</b></a>
+                    </td>
                     <td>Galata Acquisition Corp. II</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>OTGA</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2077010&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>OTGA</b></a>
+                    </td>
                     <td>OTG Acquisition Corp. I</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SSAC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2081300&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SSAC</b></a>
+                    </td>
                     <td>SPACSphere Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>DSAC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2082149&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>DSAC</b></a>
+                    </td>
                     <td>Daedalus Special Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>LPCV</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2083728&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>LPCV</b></a>
+                    </td>
                     <td>Launchpad Cadenza Acquisition Corp I</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>GPAC</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2085408&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>GPAC</b></a>
+                    </td>
                     <td>General Purpose Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SORN</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2086263&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SORN</b></a>
+                    </td>
                     <td>Soren Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>SAAQ</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2091222&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>SAAQ</b></a>
+                    </td>
                     <td>Space Asset Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>MUZE</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2093484&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>MUZE</b></a>
+                    </td>
                     <td>Muzero Acquisition Corp</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>PTOR</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2093912&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>PTOR</b></a>
+                    </td>
                     <td>Praetorian Acquisition Corp.</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td><span class="toggle-icon">&#9654;</span> <b>TMTS</b></td>
+                    <td>
+                        <span class="toggle-icon">&#9654;</span>
+                        <a href="company.html?cik=2097364&v=1774681900" onclick="event.stopPropagation()" class="company-link"><b>TMTS</b></a>
+                    </td>
                     <td>Spartacus Acquisition Corp. II</td>
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
@@ -705,7 +1043,7 @@ function toggleFacts(row) {
         </div>
 
 <div class="footer">
-    Seite generiert: 2026-03-28 08:04:12
+    Seite generiert: 2026-03-28 08:11:40
 </div>
 
 </div>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SEC Firmendaten</title>
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+           background: #f5f5f5; color: #333; padding: 20px; }
+    .container { max-width: 1200px; margin: 0 auto; }
+    h1 { font-size: 1.4em; margin-bottom: 4px; color: #333; }
+    .subtitle { color: #888; font-size: 0.9em; margin-bottom: 8px; }
+    .nav { margin-bottom: 20px; }
+    .nav a { color: #2196F3; text-decoration: none; font-size: 0.9em; }
+    .nav a:hover { text-decoration: underline; }
+    .stats { display: flex; gap: 24px; margin-bottom: 16px; flex-wrap: wrap; }
+    .stat { background: white; border-radius: 8px; padding: 12px 20px;
+             box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+    .stat .val { font-size: 1.3em; font-weight: 700; }
+    .stat .lbl { font-size: 0.75em; color: #888; }
+    .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px;
+             box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+    .filing-header { cursor: pointer; display: flex; align-items: center; gap: 12px;
+                      padding: 8px 0; user-select: none; }
+    .filing-header:hover { background: #f8f8f8; }
+    .filing-icon { font-size: 0.7em; color: #aaa; transition: transform 0.2s; display: inline-block; }
+    .filing-icon.open { transform: rotate(90deg); }
+    .filing-form { font-weight: 700; color: #333; min-width: 50px; }
+    .filing-date { color: #555; min-width: 90px; }
+    .filing-filed { color: #888; font-size: 0.85em; }
+    .filing-accn { color: #aaa; font-size: 0.75em; font-family: monospace; }
+    .filing-count { color: #2196F3; font-size: 0.85em; margin-left: auto; }
+    .facts-body { display: none; padding: 4px 0 12px 24px; }
+    .facts-body table { width: 100%; border-collapse: collapse; font-size: 0.82em; }
+    .facts-body th { text-align: left; padding: 4px 8px; border-bottom: 1px solid #e0e0e0;
+                      color: #999; font-size: 0.75em; text-transform: uppercase; }
+    .facts-body td { padding: 4px 8px; border-bottom: 1px solid #f5f5f5; color: #555; }
+    .facts-body tr:hover { background: #fafafa; }
+    .val-pos { color: #2e7d32; }
+    .val-neg { color: #c62828; }
+    .footer { text-align: center; color: #bbb; font-size: 0.75em; margin-top: 20px; }
+    .loading { text-align: center; color: #aaa; padding: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+    <div id="content"><div class="loading">Lade Firmendaten...</div></div>
+    <div class="footer">Seite generiert: 2026-03-28 08:11:41</div>
+</div>
+<script>
+(function() {
+    var params = new URLSearchParams(window.location.search);
+    var cik = params.get('cik');
+    if (!cik) {
+        document.getElementById('content').innerHTML = '<p>Kein CIK angegeben.</p>';
+        return;
+    }
+
+    fetch('company_data.json?v=' + Date.now())
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        var company = data[cik];
+        if (!company) {
+            document.getElementById('content').innerHTML = '<p>Keine Daten f\u00fcr CIK ' + cik + ' gefunden.</p>';
+            return;
+        }
+        render(cik, company);
+    })
+    .catch(function(e) {
+        document.getElementById('content').innerHTML = '<p>Fehler beim Laden: ' + e + '</p>';
+    });
+
+    function render(cik, company) {
+        var facts = company.facts;
+
+        // Nach Accession (=Filing) gruppieren
+        var filings = {};
+        var filingOrder = [];
+        facts.forEach(function(f) {
+            var key = f.accession || 'unknown';
+            if (!filings[key]) {
+                filings[key] = {
+                    form: f.form, filed: f.filed, accession: f.accession,
+                    fy: f.fy, fp: f.fp, facts: []
+                };
+                filingOrder.push(key);
+            }
+            filings[key].facts.push(f);
+        });
+
+        // Stats
+        var uniqueFilings = filingOrder.length;
+        var latestFiled = facts.length > 0 ? facts[0].filed : '-';
+
+        var html = '<h1>' + (company.ticker || 'CIK ' + cik) + ' — ' + company.name + '</h1>';
+        html += '<div class="subtitle">' + company.exchange + ' &middot; CIK ' + cik + '</div>';
+        html += '<div class="nav"><a href="details.html">&larr; Zur\u00fcck zu Update-Details</a></div>';
+        html += '<div class="stats">';
+        html += '<div class="stat"><div class="val">' + facts.length.toLocaleString() + '</div><div class="lbl">Financial Facts</div></div>';
+        html += '<div class="stat"><div class="val">' + uniqueFilings + '</div><div class="lbl">SEC Filings</div></div>';
+        html += '<div class="stat"><div class="val">' + latestFiled + '</div><div class="lbl">Letztes Filing</div></div>';
+        html += '</div>';
+
+        // Filings auflisten
+        filingOrder.forEach(function(key, idx) {
+            var filing = filings[key];
+            var isFirst = idx === 0;
+            html += '<div class="card">';
+            html += '<div class="filing-header" onclick="toggleFiling(this)">';
+            html += '<span class="filing-icon' + (isFirst ? ' open' : '') + '">&#9654;</span>';
+            html += '<span class="filing-form">' + (filing.form || '-') + '</span>';
+            html += '<span class="filing-date">' + (filing.filed || '-') + '</span>';
+            html += '<span class="filing-filed">FY' + (filing.fy || '?') + ' ' + (filing.fp || '') + '</span>';
+            html += '<span class="filing-accn">' + (filing.accession || '') + '</span>';
+            html += '<span class="filing-count">' + filing.facts.length + ' Records</span>';
+            html += '</div>';
+
+            html += '<div class="facts-body" style="' + (isFirst ? 'display:block' : 'display:none') + '">';
+            html += '<table><tr><th>Concept</th><th>Beschreibung</th><th style="text-align:right">Wert</th><th>Einheit</th><th>Zeitraum</th></tr>';
+            filing.facts.forEach(function(f) {
+                var val = f.value;
+                var valStr = (typeof val === 'number') ? val.toLocaleString('de-DE') : String(val);
+                var valClass = (typeof val === 'number' && val < 0) ? 'val-neg' : (typeof val === 'number' && val > 0) ? 'val-pos' : '';
+                var period = f.start_date ? (f.start_date + ' — ' + f.end_date) : f.end_date;
+                html += '<tr>';
+                html += '<td><b>' + f.concept + '</b></td>';
+                html += '<td style="color:#888;font-size:0.9em">' + (f.label || '') + '</td>';
+                html += '<td style="text-align:right" class="' + valClass + '">' + valStr + '</td>';
+                html += '<td>' + (f.unit || '') + '</td>';
+                html += '<td style="color:#888">' + period + '</td>';
+                html += '</tr>';
+            });
+            html += '</table></div></div>';
+        });
+
+        document.getElementById('content').innerHTML = html;
+    }
+})();
+
+function toggleFiling(header) {
+    var body = header.nextElementSibling;
+    var icon = header.querySelector('.filing-icon');
+    if (body.style.display === 'none') {
+        body.style.display = 'block';
+        icon.classList.add('open');
+    } else {
+        body.style.display = 'none';
+        icon.classList.remove('open');
+    }
+}
+</script>
+</body>
+</html>

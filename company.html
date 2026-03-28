@@ -42,8 +42,6 @@
     .val-pos { color: #2e7d32; }
     .val-neg { color: #c62828; }
     .new-filing { border-left: 3px solid #4CAF50; }
-    .new-filing .filing-header { background: #f1f8e9; }
-    .new-fact { background: #f1f8e9; }
     .new-badge { background: #4CAF50; color: white; font-size: 0.65em; padding: 2px 6px;
                   border-radius: 3px; margin-left: 8px; font-weight: 600; }
     .footer { text-align: center; color: #bbb; font-size: 0.75em; margin-top: 20px; }
@@ -53,7 +51,7 @@
 <body>
 <div class="container">
     <div id="content"><div class="loading">Lade Firmendaten...</div></div>
-    <div class="footer">Seite generiert: 2026-03-28 08:27:03</div>
+    <div class="footer">Seite generiert: 2026-03-28 08:30:54</div>
 </div>
 <script>
 (function() {
@@ -137,7 +135,7 @@
                 var valStr = (typeof val === 'number') ? val.toLocaleString('de-DE') : String(val);
                 var valClass = (typeof val === 'number' && val < 0) ? 'val-neg' : (typeof val === 'number' && val > 0) ? 'val-pos' : '';
                 var period = f.start_date ? (f.start_date + ' — ' + f.end_date) : f.end_date;
-                html += '<tr' + (isNew ? ' class="new-fact"' : '') + '>';
+                html += '<tr>';
                 html += '<td><b>' + f.concept + '</b></td>';
                 html += '<td style="color:#888;font-size:0.9em">' + (f.label || '') + '</td>';
                 html += '<td style="text-align:right" class="' + valClass + '">' + valStr + '</td>';

@@ -91,11 +91,571 @@ function toggleFacts(row) {
             <div class="sync-header">
                 <span style="color:#4CAF50;font-weight:bold">done</span>
                 <span class="meta">2026-03-27T23:19 — 2026-03-27 22:21</span>
-                <span class="meta">0 Firmen, 106,164 neue Facts</span>
+                <span class="meta">112 Firmen, 106,164 neue Facts</span>
             </div>
             <table class="details-table">
                 <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
-                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+                <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>EPAC</b></td>
+                    <td>ENERPAC TOOL GROUP CORP</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>DDS</b></td>
+                    <td>DILLARD'S, INC.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>OXM</b></td>
+                    <td>OXFORD INDUSTRIES INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>UG</b></td>
+                    <td>UNITED GUARDIAN INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>PBT</b></td>
+                    <td>PERMIAN BASIN ROYALTY TRUST</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SJT</b></td>
+                    <td>SAN JUAN BASIN ROYALTY TRUST</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>UTMD</b></td>
+                    <td>UTAH MEDICAL PRODUCTS INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>AROW</b></td>
+                    <td>ARROW FINANCIAL CORP</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CMTV</b></td>
+                    <td>COMMUNITY BANCORP /VT</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>M</b></td>
+                    <td>Macy's, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>NKSH</b></td>
+                    <td>NATIONAL BANKSHARES INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>VBIX</b></td>
+                    <td>Viewbix Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CCL</b></td>
+                    <td>CARNIVAL CORP</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CRT</b></td>
+                    <td>CROSS TIMBERS ROYALTY TRUST</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>QUIK</b></td>
+                    <td>QUICKLOGIC Corp</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>STRS</b></td>
+                    <td>STRATUS PROPERTIES INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ENVB</b></td>
+                    <td>Enveric Biosciences, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>DRI</b></td>
+                    <td>DARDEN RESTAURANTS INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>RVP</b></td>
+                    <td>RETRACTABLE TECHNOLOGIES INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>AIM</b></td>
+                    <td>AIM ImmunoTech Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>AIRI</b></td>
+                    <td>AIR INDUSTRIES GROUP</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>INVA</b></td>
+                    <td>Innoviva, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>LOAN</b></td>
+                    <td>MANHATTAN BRIDGE CAPITAL, INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SQFT</b></td>
+                    <td>Presidio Property Trust, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>DKS</b></td>
+                    <td>DICK'S SPORTING GOODS, INC.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ONTF</b></td>
+                    <td>ON24 INC.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CUK</b></td>
+                    <td>CARNIVAL PLC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>FENC</b></td>
+                    <td>FENNEC PHARMACEUTICALS INC.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BOTJ</b></td>
+                    <td>BANK OF THE JAMES FINANCIAL GROUP INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>DLPN</b></td>
+                    <td>Dolphin Entertainment, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BVFL</b></td>
+                    <td>BV Financial, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CCO</b></td>
+                    <td>Clear Channel Outdoor Holdings, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>NPB</b></td>
+                    <td>NORTHPOINTE BANCSHARES INC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>VRA</b></td>
+                    <td>Vera Bradley, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>PRHI</b></td>
+                    <td>Presurance Holdings, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>IPWR</b></td>
+                    <td>Ideal Power Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SILO</b></td>
+                    <td>Silo Pharma, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>OUNZ</b></td>
+                    <td>VanEck Merk Gold ETF</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>TNON</b></td>
+                    <td>Tenon Medical, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>INTS</b></td>
+                    <td>INTENSITY THERAPEUTICS, INC.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>VABK</b></td>
+                    <td>Virginia National Bankshares Corp</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>GYRO</b></td>
+                    <td>Gyrodyne, LLC</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>FGNX</b></td>
+                    <td>FG Nexus Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ANY</b></td>
+                    <td>Sphere 3D Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SKYX</b></td>
+                    <td>SKYX Platforms Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>KSCP</b></td>
+                    <td>Knightscope, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>PAVM</b></td>
+                    <td>PAVmed Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>GDC</b></td>
+                    <td>GD Culture Group Ltd</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>MNPR</b></td>
+                    <td>Monopar Therapeutics</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>KZR</b></td>
+                    <td>Kezar Life Sciences, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BAFN</b></td>
+                    <td>BayFirst Financial Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>PHUN</b></td>
+                    <td>Phunware, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>HYFM</b></td>
+                    <td>HYDROFARM HOLDINGS GROUP, INC.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SER</b></td>
+                    <td>Serina Therapeutics, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BTBT</b></td>
+                    <td>Bit Digital, Inc</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>HOTH</b></td>
+                    <td>Hoth Therapeutics, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BTAI</b></td>
+                    <td>BioXcel Therapeutics, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>PRT</b></td>
+                    <td>PermRock Royalty Trust</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>EPSN</b></td>
+                    <td>Epsilon Energy Ltd.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>AUTL</b></td>
+                    <td>Autolus Therapeutics plc</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BTGO</b></td>
+                    <td>BITGO HOLDINGS, INC.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ABTC</b></td>
+                    <td>American Bitcoin Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>HOWL</b></td>
+                    <td>Werewolf Therapeutics, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BSBK</b></td>
+                    <td>Bogota Financial Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>TIL</b></td>
+                    <td>Instil Bio, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>HUMA</b></td>
+                    <td>Humacyte, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>FORA</b></td>
+                    <td>Forian Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>EMPD</b></td>
+                    <td>Empery Digital Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>MEHA</b></td>
+                    <td>Functional Brands Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>HODL</b></td>
+                    <td>VanEck Bitcoin ETF</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>LOCL</b></td>
+                    <td>Local Bounti Corporation/DE</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>VGAS</b></td>
+                    <td>Verde Clean Fuels, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>BTCW</b></td>
+                    <td>WisdomTree Bitcoin Fund</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ANSC</b></td>
+                    <td>Agriculture & Natural Solutions Acquisition Corp</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SNTI</b></td>
+                    <td>Senti Biosciences, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CLDI</b></td>
+                    <td>Calidi Biotherapeutics, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>IMMX</b></td>
+                    <td>Immix Biopharma, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CYN</b></td>
+                    <td>Cyngn Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>NSTS</b></td>
+                    <td>NSTS Bancorp, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SBC</b></td>
+                    <td>SBC Medical Group Holdings Inc</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ADGM</b></td>
+                    <td>Adagio Medical Holdings, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SIMA</b></td>
+                    <td>SIM Acquisition Corp. I</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>LPAA</b></td>
+                    <td>Launch One Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>LPBB</b></td>
+                    <td>Launch Two Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>VCIC</b></td>
+                    <td>Vine Hill Capital Investment Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SOUL</b></td>
+                    <td>Soulpower Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>KFII</b></td>
+                    <td>K&F GROWTH ACQUISITION CORP. II</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>FUSE</b></td>
+                    <td>Fusemachines Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>JAGU</b></td>
+                    <td>Jaguar Uranium Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ALUB</b></td>
+                    <td>Alussa Energy Acquisition Corp. II</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>EVAC</b></td>
+                    <td>EQV Ventures Acquisition Corp. II</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>GSHR</b></td>
+                    <td>Gesher Acquisition Corp. II</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ONCH</b></td>
+                    <td>1RT Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>RDAG</b></td>
+                    <td>Republic Digital Acquisition Co</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>AVBC</b></td>
+                    <td>Avidia Bancorp, Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>ANDG</b></td>
+                    <td>Andersen Group Inc.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>HVMC</b></td>
+                    <td>Highview Merger Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>CRAC</b></td>
+                    <td>Crown Reserve Acquisition Corp. I</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>GSRF</b></td>
+                    <td>GSR IV Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>TLNC</b></td>
+                    <td>Talon Capital Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>EMIS</b></td>
+                    <td>Emmis Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>LATA</b></td>
+                    <td>Galata Acquisition Corp. II</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>OTGA</b></td>
+                    <td>OTG Acquisition Corp. I</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SSAC</b></td>
+                    <td>SPACSphere Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>DSAC</b></td>
+                    <td>Daedalus Special Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>LPCV</b></td>
+                    <td>Launchpad Cadenza Acquisition Corp I</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>GPAC</b></td>
+                    <td>General Purpose Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SORN</b></td>
+                    <td>Soren Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>SAAQ</b></td>
+                    <td>Space Asset Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>MUZE</b></td>
+                    <td>Muzero Acquisition Corp</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>PTOR</b></td>
+                    <td>Praetorian Acquisition Corp.</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+                    <td><span class="toggle-icon">&#9654;</span> <b>TMTS</b></td>
+                    <td>Spartacus Acquisition Corp. II</td>
+                    <td style="text-align:right">0</td>
+                    <td>2026-03-27T23:19</td>
+                </tr>
             </table>
         </div>
         <div class="card">
@@ -111,7 +671,7 @@ function toggleFacts(row) {
         </div>
 
 <div class="footer">
-    Seite generiert: 2026-03-28 07:55:05
+    Seite generiert: 2026-03-28 07:59:44
 </div>
 
 </div>

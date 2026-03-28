@@ -17,8 +17,11 @@
     .nav a:hover { text-decoration: underline; }
     .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px;
              box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
-    .sync-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px;
-                    flex-wrap: wrap; }
+    .sync-header { display: flex; align-items: center; gap: 16px;
+                    flex-wrap: wrap; user-select: none; }
+    .sync-header:not(.open) { margin-bottom: 0; }
+    .sync-header.open { margin-bottom: 12px; }
+    .sync-toggle { font-size: 0.7em; color: #aaa; transition: transform 0.2s; display: inline-block; }
     .meta { color: #888; font-size: 0.85em; }
     .details-table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
     .details-table th { text-align: left; padding: 8px; border-bottom: 2px solid #eee;
@@ -35,6 +38,19 @@
     .footer { text-align: center; color: #bbb; font-size: 0.75em; margin-top: 20px; }
 </style>
 <script>
+function toggleSync(header) {
+    var body = header.nextElementSibling;
+    var icon = header.querySelector('.sync-toggle');
+    if (body.style.display === 'none') {
+        body.style.display = '';
+        header.classList.add('open');
+        icon.innerHTML = '&#9660;';
+    } else {
+        body.style.display = 'none';
+        header.classList.remove('open');
+        icon.innerHTML = '&#9654;';
+    }
+}
 function toggleFacts(row) {
     var next = row.nextElementSibling;
     if (next && next.classList.contains('facts-container')) {
@@ -58,47 +74,58 @@ function toggleFacts(row) {
 
 
         <div class="card">
-            <div class="sync-header">
+            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
+                <span class="sync-toggle">&#9654;</span>
                 <span style="color:#4CAF50;font-weight:bold">done</span>
                 <span class="meta">2026-03-28T07:55 — 2026-03-28 06:55</span>
                 <span class="meta">0 Firmen, 0 neue Facts</span>
             </div>
-            <table class="details-table">
-                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
-                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
-            </table>
+            <div class="sync-body" style="display:none">
+                <table class="details-table">
+                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                    <tr><td colspan="4" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+                </table>
+            </div>
         </div>
         <div class="card">
-            <div class="sync-header">
+            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
+                <span class="sync-toggle">&#9654;</span>
                 <span style="color:#4CAF50;font-weight:bold">done</span>
                 <span class="meta">2026-03-28T07:38 — 2026-03-28 06:39</span>
                 <span class="meta">0 Firmen, 106,164 neue Facts</span>
             </div>
-            <table class="details-table">
-                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
-                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
-            </table>
+            <div class="sync-body" style="display:none">
+                <table class="details-table">
+                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                    <tr><td colspan="4" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+                </table>
+            </div>
         </div>
         <div class="card">
-            <div class="sync-header">
+            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
+                <span class="sync-toggle">&#9654;</span>
                 <span style="color:#4CAF50;font-weight:bold">done</span>
                 <span class="meta">2026-03-28T07:37 — 2026-03-28 06:38</span>
                 <span class="meta">0 Firmen, 106,164 neue Facts</span>
             </div>
-            <table class="details-table">
-                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
-                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
-            </table>
+            <div class="sync-body" style="display:none">
+                <table class="details-table">
+                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                    <tr><td colspan="4" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+                </table>
+            </div>
         </div>
         <div class="card">
-            <div class="sync-header">
+            <div class="sync-header open" onclick="toggleSync(this)" style="cursor:pointer">
+                <span class="sync-toggle">&#9660;</span>
                 <span style="color:#4CAF50;font-weight:bold">done</span>
                 <span class="meta">2026-03-27T23:19 — 2026-03-27 22:21</span>
                 <span class="meta">112 Firmen, 106,164 neue Facts</span>
             </div>
-            <table class="details-table">
-                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
-                <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
+            <div class="sync-body" style="">
+                <table class="details-table">
+                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                    <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td><span class="toggle-icon">&#9654;</span> <b>EPAC</b></td>
                     <td>ENERPAC TOOL GROUP CORP</td>
                     <td style="text-align:right">0</td>
@@ -659,22 +686,26 @@ function toggleFacts(row) {
                     <td style="text-align:right">0</td>
                     <td>2026-03-27T23:19</td>
                 </tr>
-            </table>
+                </table>
+            </div>
         </div>
         <div class="card">
-            <div class="sync-header">
+            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
+                <span class="sync-toggle">&#9654;</span>
                 <span style="color:#4CAF50;font-weight:bold">done</span>
                 <span class="meta">2026-03-27T23:05 — 2026-03-27 22:05</span>
                 <span class="meta">0 Firmen, 0 neue Facts</span>
             </div>
-            <table class="details-table">
-                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
-                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
-            </table>
+            <div class="sync-body" style="display:none">
+                <table class="details-table">
+                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                    <tr><td colspan="4" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+                </table>
+            </div>
         </div>
 
 <div class="footer">
-    Seite generiert: 2026-03-28 08:02:21
+    Seite generiert: 2026-03-28 08:04:12
 </div>
 
 </div>

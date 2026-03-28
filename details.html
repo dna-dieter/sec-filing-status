@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>SEC EDGAR Update Details</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+           background: #f5f5f5; color: #333; padding: 20px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    h1 { font-size: 1.4em; margin-bottom: 8px; color: #555; }
+    .nav { margin-bottom: 20px; }
+    .nav a { color: #2196F3; text-decoration: none; font-size: 0.9em; }
+    .nav a:hover { text-decoration: underline; }
+    .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px;
+             box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+    .sync-header { display: flex; align-items: center; gap: 16px; margin-bottom: 12px;
+                    flex-wrap: wrap; }
+    .meta { color: #888; font-size: 0.85em; }
+    .details-table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+    .details-table th { text-align: left; padding: 8px; border-bottom: 2px solid #eee;
+                         color: #888; font-weight: 600; font-size: 0.8em; text-transform: uppercase; }
+    .details-table td { padding: 8px; border-bottom: 1px solid #f0f0f0; }
+    .company-row:hover { background: #f8f8f8; }
+    .toggle-icon { font-size: 0.7em; color: #aaa; transition: transform 0.2s; display: inline-block; }
+    .toggle-icon.open { transform: rotate(90deg); }
+    .facts-table { width: 100%; border-collapse: collapse; font-size: 0.82em; margin: 8px 0; }
+    .facts-table th { text-align: left; padding: 4px 8px; border-bottom: 1px solid #e0e0e0;
+                       color: #999; font-size: 0.75em; text-transform: uppercase; }
+    .facts-table td { padding: 4px 8px; border-bottom: 1px solid #f5f5f5; color: #555; }
+    .fact-row:hover { background: #fafafa; }
+    .footer { text-align: center; color: #bbb; font-size: 0.75em; margin-top: 20px; }
+</style>
+<script>
+function toggleFacts(row) {
+    var next = row.nextElementSibling;
+    if (next && next.classList.contains('facts-container')) {
+        var icon = row.querySelector('.toggle-icon');
+        if (next.style.display === 'none') {
+            next.style.display = '';
+            icon.classList.add('open');
+        } else {
+            next.style.display = 'none';
+            icon.classList.remove('open');
+        }
+    }
+}
+</script>
+</head>
+<body>
+<div class="container">
+
+<h1>SEC EDGAR Update Details</h1>
+<div class="nav"><a href="index.html">&larr; Zurück zum Status-Monitor</a></div>
+
+
+        <div class="card">
+            <div class="sync-header">
+                <span style="color:#4CAF50;font-weight:bold">done</span>
+                <span class="meta">2026-03-28T07:55 — 2026-03-28 06:55</span>
+                <span class="meta">0 Firmen, 0 neue Facts</span>
+            </div>
+            <table class="details-table">
+                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+            </table>
+        </div>
+        <div class="card">
+            <div class="sync-header">
+                <span style="color:#4CAF50;font-weight:bold">done</span>
+                <span class="meta">2026-03-28T07:38 — 2026-03-28 06:39</span>
+                <span class="meta">0 Firmen, 106,164 neue Facts</span>
+            </div>
+            <table class="details-table">
+                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+            </table>
+        </div>
+        <div class="card">
+            <div class="sync-header">
+                <span style="color:#4CAF50;font-weight:bold">done</span>
+                <span class="meta">2026-03-28T07:37 — 2026-03-28 06:38</span>
+                <span class="meta">0 Firmen, 106,164 neue Facts</span>
+            </div>
+            <table class="details-table">
+                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+            </table>
+        </div>
+        <div class="card">
+            <div class="sync-header">
+                <span style="color:#4CAF50;font-weight:bold">done</span>
+                <span class="meta">2026-03-27T23:19 — 2026-03-27 22:21</span>
+                <span class="meta">0 Firmen, 106,164 neue Facts</span>
+            </div>
+            <table class="details-table">
+                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+            </table>
+        </div>
+        <div class="card">
+            <div class="sync-header">
+                <span style="color:#4CAF50;font-weight:bold">done</span>
+                <span class="meta">2026-03-27T23:05 — 2026-03-27 22:05</span>
+                <span class="meta">0 Firmen, 0 neue Facts</span>
+            </div>
+            <table class="details-table">
+                <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Neue Facts</th><th>Zeitstempel</th></tr>
+                <tr><td colspan="5" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+            </table>
+        </div>
+
+<div class="footer">
+    Seite generiert: 2026-03-28 07:55:05
+</div>
+
+</div>
+</body>
+</html>

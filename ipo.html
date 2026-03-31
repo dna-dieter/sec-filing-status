@@ -345,6 +345,12 @@
         <button class="year-btn active" data-exchange="NYSE" onclick="toggleExchange(this)">NYSE</button> <button class="year-btn active" data-exchange="Nasdaq" onclick="toggleExchange(this)">Nasdaq</button> 
         <button class="csv-btn" style="margin-left:12px" onclick="downloadCSV()">CSV Download</button>
     </div>
+    <div class="filter-bar">
+        <span>Min. Market Cap (Mrd USD):</span>
+        <input type="number" id="min-mcap" min="0" step="0.1" placeholder="z.B. 1.5"
+               style="width:100px;padding:4px 8px;border:1px solid #ccc;border-radius:4px;font-size:0.85em"
+               oninput="applyFilters()">
+    </div>
     <div class="sort-controls">
         <span>Sortierung:</span>
         <button class="sort-btn active" onclick="sortTable('date')">Nach Datum (neueste zuerst)</button>
@@ -13930,7 +13936,7 @@
 
 <div class="footer">
     <a href="index.html" style="color:#2196F3;text-decoration:none">Dashboard</a>
-    &nbsp;|&nbsp; Auto-Refresh alle 5 Minuten &nbsp;|&nbsp; Generiert: 2026-03-31 10:02:26
+    &nbsp;|&nbsp; Auto-Refresh alle 5 Minuten &nbsp;|&nbsp; Generiert: 2026-03-31 10:17:05
 </div>
 
 </div>
@@ -13971,12 +13977,16 @@ function applyFilters() {
     document.querySelectorAll('.year-btn.active[data-year]').forEach(b => activeYears.add(b.dataset.year));
     const activeExchanges = new Set();
     document.querySelectorAll('.year-btn.active[data-exchange]').forEach(b => activeExchanges.add(b.dataset.exchange));
+    const minInput = document.getElementById('min-mcap').value;
+    const minMcap = minInput ? parseFloat(minInput) * 1e9 : 0;
     const rows = document.querySelectorAll('#ipo-table tbody tr');
     let visible = 0;
     rows.forEach(r => {
         const yearOk = activeYears.has(r.dataset.year);
         const exchOk = activeExchanges.has(r.dataset.exchange);
-        if (yearOk && exchOk) {
+        const floatVal = parseInt(r.dataset.float || 0);
+        const mcapOk = floatVal >= minMcap;
+        if (yearOk && exchOk && mcapOk) {
             r.style.display = '';
             visible++;
         } else {

@@ -16,10 +16,10 @@
     .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px;
              box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
     .status-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-    .status-dot { width: 16px; height: 16px; border-radius: 50%; background: #9E9E9E;
+    .status-dot { width: 16px; height: 16px; border-radius: 50%; background: #4CAF50;
                     }
     @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
-    .status-label { font-size: 1.2em; font-weight: 600; color: #9E9E9E; }
+    .status-label { font-size: 1.2em; font-weight: 600; color: #4CAF50; }
     .meta { color: #888; font-size: 0.85em; margin-top: 4px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
              gap: 12px; margin-top: 12px; }
@@ -43,21 +43,21 @@
     <div class="status-header">
         <div class="status-dot"></div>
         <div>
-            <div class="status-label">Keine Updates nötig</div>
-            <div class="meta">Montag — SEC hat am Wochenende keine neuen Filings</div>
+            <div class="status-label">Abgeschlossen</div>
+            <div class="meta">118 Firmen aktualisiert, 3,599 Facts in 69s</div>
         </div>
     </div>
     <div class="meta">
-        Zeitstempel: 2026-03-30T02:00:02 &nbsp;|&nbsp;
-        Referenzdatum: 2026-03-30 &nbsp;|&nbsp;
-        Letzter Sync: 
+        Zeitstempel: 2026-03-31T08:58:58 &nbsp;|&nbsp;
+        Referenzdatum: 2026-03-31 &nbsp;|&nbsp;
+        Letzter Sync: 2026-03-28
         
     </div>
     <div class="grid">
-        <div class="metric"><div class="value">0</div><div class="label">Neue Filings</div></div>
-        <div class="metric"><div class="value">0</div><div class="label">Zu aktualisieren</div></div>
-        <div class="metric"><div class="value">0</div><div class="label">Aktualisiert</div></div>
-        <div class="metric"><div class="value">0</div><div class="label">Facts geladen</div></div>
+        <div class="metric"><div class="value">214</div><div class="label">Neue Filings</div></div>
+        <div class="metric"><div class="value">131</div><div class="label">Zu aktualisieren</div></div>
+        <div class="metric"><div class="value">118</div><div class="label">Aktualisiert</div></div>
+        <div class="metric"><div class="value">3,599</div><div class="label">Facts geladen</div></div>
         <div class="metric"><div class="value">0</div><div class="label">Neue Ticker</div></div>
         <div class="metric"><div class="value">0</div><div class="label">Fehler</div></div>
     </div>
@@ -67,10 +67,10 @@
 <div class="card">
     <h2 style="font-size:1em;color:#888;margin-bottom:12px">Datenbank</h2>
     <div class="grid">
-        <div class="metric"><div class="value">8,083</div><div class="label">Unternehmen</div></div>
-        <div class="metric"><div class="value">5,732</div><div class="label">Mit Bewegungsdaten</div></div>
-        <div class="metric"><div class="value">7,916,627</div><div class="label">Financial Facts</div></div>
-        <div class="metric"><div class="value">2026-03-27</div><div class="label">Letztes Filing</div></div>
+        <div class="metric"><div class="value">8,084</div><div class="label">Unternehmen</div></div>
+        <div class="metric"><div class="value">5,734</div><div class="label">Mit Bewegungsdaten</div></div>
+        <div class="metric"><div class="value">7,920,226</div><div class="label">Financial Facts</div></div>
+        <div class="metric"><div class="value">2026-03-30</div><div class="label">Letztes Filing</div></div>
         <div class="metric"><div class="value">2148.4 MB</div><div class="label">DB-Größe</div></div>
     </div>
 </div>
@@ -88,6 +88,13 @@
             <th style="text-align:right">Facts</th>
         </tr>
         <tr>
+            <td>2026-03-31T08:57:49</td>
+            <td>2026-03-31 06:58:58</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">118</td>
+            <td style="text-align:right">3,599</td>
+        </tr><tr>
             <td>2026-03-28T09:14:46</td>
             <td>2026-03-28 08:14:46</td>
             <td>delta_update</td>
@@ -141,8 +148,8 @@
 </div>
 
 <div class="footer">
-    <a href="details.html?v=1774828818" style="color:#2196F3;text-decoration:none">Update-Details anzeigen</a>
-    &nbsp;|&nbsp; Auto-Refresh alle 30 Sekunden &nbsp;|&nbsp; Seite generiert: 2026-03-30 02:00:18
+    <a href="details.html?v=1774940345" style="color:#2196F3;text-decoration:none">Update-Details anzeigen</a>
+    &nbsp;|&nbsp; Auto-Refresh alle 30 Sekunden &nbsp;|&nbsp; Seite generiert: 2026-03-31 08:59:05
 </div>
 
 </div>

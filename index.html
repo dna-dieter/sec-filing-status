@@ -46,8 +46,6 @@
 <h1>Nacht-Batch Dashboard</h1>
 <div class="subtitle">Automatische Jobs auf Mac Mini — Naechster Lauf: Git-Sync Morgen 03:00, SEC-Update Morgen 04:00</div>
 
-
-
 <div class="jobs">
 
     <!-- Job 1: Git-Sync -->
@@ -78,32 +76,72 @@
                 <div class="job-title">SEC EDGAR Update</div>
                 <div class="job-schedule">Taeglich 04:00 Uhr</div>
             </div>
-            <div class="status-badge" style="background:#9E9E9E22;color:#9E9E9E">
-                <div class="status-dot" style="background:#9E9E9E"></div>
-                Keine Updates
+            <div class="status-badge" style="background:#4CAF5022;color:#4CAF50">
+                <div class="status-dot" style="background:#4CAF50"></div>
+                Erfolgreich
             </div>
         </div>
         <div class="job-details">
-            <strong>Letzter Lauf:</strong> 2026-03-31T10:27:56<br>
-            <strong>Ergebnis:</strong> Keine neuen Filings gefunden<br>
+            <strong>Letzter Lauf:</strong> 2026-04-02T19:50:56<br>
+            <strong>Ergebnis:</strong> SEC Delta-Update erfolgreich<br>
             <strong>Facts geladen:</strong> 0 | Neue Reg.: 0 | Fehler: 0<br>
             <strong>Naechster Lauf:</strong> Morgen 04:00
         </div>
         <a class="job-link" href="sec-status.html">SEC Update Details &rarr;</a>
     </div>
 
+    <!-- Job 3: Aktien Delta Update -->
+    <div class="job">
+        <div class="job-header">
+            <div>
+                <div class="job-title">Aktien Delta Update</div>
+                <div class="job-schedule">Via Mantelroutine</div>
+            </div>
+            <div class="status-badge" style="background:#4CAF5022;color:#4CAF50">
+                <div class="status-dot" style="background:#4CAF50"></div>
+                Erfolgreich
+            </div>
+        </div>
+        <div class="job-details">
+            <strong>Datum:</strong> 2026-04-02<br>
+            <strong>Kurse geladen:</strong> 8/8<br>
+            <strong>Weinstein-Phase:</strong> Topbildung (Phase 3)<br>
+            <strong>Indizes:</strong> SPY 6554.18, QQQ 581.57, IWM 249.69, VIX 25.47
+        </div>
+    </div>
+
+    <!-- Job 4: Aktien Kalkulation -->
+    <div class="job">
+        <div class="job-header">
+            <div>
+                <div class="job-title">Aktien Kalkulation</div>
+                <div class="job-schedule">Via Mantelroutine</div>
+            </div>
+            <div class="status-badge" style="background:#FF980022;color:#FF9800">
+                <div class="status-dot" style="background:#FF9800"></div>
+                Ampel: Gelb
+            </div>
+        </div>
+        <div class="job-details">
+            <strong>VIX:</strong> 25.47 (erhoeht)<br>
+            <strong>Positionsgroesse:</strong> 50%<br>
+            <strong>Marktphase:</strong> Topbildung<br>
+            <strong>Signal:</strong> GELB
+        </div>
+    </div>
+
 </div>
 
-<!-- DB Übersicht -->
+<!-- DB Uebersicht -->
 <div class="overview">
     <h2>Datenbank-Uebersicht</h2>
     <div class="grid">
         <div class="metric"><div class="value">10,447</div><div class="label">Ticker Registrations</div></div>
-        <div class="metric"><div class="value">8,084</div><div class="label">Unternehmen</div></div>
-        <div class="metric"><div class="value">5,734</div><div class="label">Mit Bewegungsdaten</div></div>
-        <div class="metric"><div class="value">7,920,226</div><div class="label">Financial Facts</div></div>
+        <div class="metric"><div class="value">8,105</div><div class="label">Unternehmen</div></div>
+        <div class="metric"><div class="value">5,736</div><div class="label">Mit Bewegungsdaten</div></div>
+        <div class="metric"><div class="value">7,929,396</div><div class="label">Financial Facts</div></div>
         <div class="metric"><div class="value">68,463</div><div class="label">Registration Filings</div></div>
-        <div class="metric"><div class="value">2026-03-30</div><div class="label">Letztes Filing</div></div>
+        <div class="metric"><div class="value">2026-04-02</div><div class="label">Letztes Filing</div></div>
         <div class="metric"><div class="value">2148.4 MB</div><div class="label">DB-Groesse</div></div>
     </div>
 </div>
@@ -112,7 +150,7 @@
     <a href="sec-status.html">SEC Status</a> &nbsp;|&nbsp;
     <a href="ipo.html">IPO Monitor</a> &nbsp;|&nbsp;
     <a href="details.html">Update-Details</a> &nbsp;|&nbsp;
-    Auto-Refresh 60s &nbsp;|&nbsp; Generiert: 2026-03-31 10:28:02
+    Auto-Refresh 60s &nbsp;|&nbsp; Generiert: 2026-04-02 20:15:00
 </div>
 
 </div>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="30">
+<title>SEC EDGAR Update Status</title>
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+           background: #f5f5f5; color: #333; padding: 20px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1 { font-size: 1.4em; margin-bottom: 20px; color: #555; }
+    .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px;
+             box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+    .status-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .status-dot { width: 16px; height: 16px; border-radius: 50%; background: #4CAF50;
+                    }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .status-label { font-size: 1.2em; font-weight: 600; color: #4CAF50; }
+    .meta { color: #888; font-size: 0.85em; margin-top: 4px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+             gap: 12px; margin-top: 12px; }
+    .metric { background: #fafafa; border-radius: 6px; padding: 12px; text-align: center; }
+    .metric .value { font-size: 1.3em; font-weight: 700; color: #333; }
+    .metric .label { font-size: 0.75em; color: #888; margin-top: 2px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+    th { text-align: left; padding: 8px; border-bottom: 2px solid #eee; color: #888;
+          font-weight: 600; font-size: 0.8em; text-transform: uppercase; }
+    td { padding: 8px; border-bottom: 1px solid #f0f0f0; }
+    .footer { text-align: center; color: #bbb; font-size: 0.75em; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>SEC EDGAR Update Monitor</h1>
+
+<!-- Aktueller Status -->
+<div class="card">
+    <div class="status-header">
+        <div class="status-dot"></div>
+        <div>
+            <div class="status-label">Abgeschlossen</div>
+            <div class="meta">34 Firmen aktualisiert, 1,511 Facts, 35 neue Registrierungen in 42s</div>
+        </div>
+    </div>
+    <div class="meta">
+        Zeitstempel: 2026-07-25T10:49:31 &nbsp;|&nbsp;
+        Referenzdatum: 2026-07-25 &nbsp;|&nbsp;
+        Letzter Sync: 2026-07-24
+        
+    </div>
+    <div class="grid">
+        <div class="metric"><div class="value">51</div><div class="label">Neue Filings</div></div>
+        <div class="metric"><div class="value">42</div><div class="label">Zu aktualisieren</div></div>
+        <div class="metric"><div class="value">34</div><div class="label">Aktualisiert</div></div>
+        <div class="metric"><div class="value">1,511</div><div class="label">Facts geladen</div></div>
+        <div class="metric"><div class="value">0</div><div class="label">Neue Ticker</div></div>
+        <div class="metric"><div class="value">35</div><div class="label">Neue Registrierungen</div></div>
+        <div class="metric"><div class="value">0</div><div class="label">Fehler</div></div>
+    </div>
+</div>
+
+<!-- DB-Statistiken -->
+<div class="card">
+    <h2 style="font-size:1em;color:#888;margin-bottom:12px">Datenbank</h2>
+    <div class="grid">
+        <div class="metric"><div class="value">10,447</div><div class="label">Registrierte Ticker</div></div>
+        <div class="metric"><div class="value">8,491</div><div class="label">Unternehmen</div></div>
+        <div class="metric"><div class="value">5,749</div><div class="label">Mit Bewegungsdaten</div></div>
+        <div class="metric"><div class="value">8,044,762</div><div class="label">Financial Facts</div></div>
+        <div class="metric"><div class="value">71,228</div><div class="label">Registration Filings</div></div>
+        <div class="metric"><div class="value">2026-07-24</div><div class="label">Letztes Filing</div></div>
+        <div class="metric"><div class="value">2148.4 MB</div><div class="label">DB-Größe</div></div>
+    </div>
+</div>
+
+<!-- Historie -->
+<div class="card">
+    <h2 style="font-size:1em;color:#888;margin-bottom:12px">Sync-Historie (letzte 20 Läufe)</h2>
+    <table>
+        <tr>
+            <th>Gestartet</th>
+            <th>Beendet</th>
+            <th>Typ</th>
+            <th>Status</th>
+            <th style="text-align:right">Firmen</th>
+            <th style="text-align:right">Facts</th>
+        </tr>
+        <tr>
+            <td>2026-07-25T10:48:49</td>
+            <td>2026-07-25 08:49:31</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">34</td>
+            <td style="text-align:right">1,511</td>
+        </tr><tr>
+            <td>2026-07-24T13:03:34</td>
+            <td>2026-07-24 11:09:18</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">128</td>
+            <td style="text-align:right">6,588</td>
+        </tr><tr>
+            <td>2026-07-18T13:36:53</td>
+            <td>2026-07-18 11:37:13</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">16</td>
+            <td style="text-align:right">693</td>
+        </tr><tr>
+            <td>2026-07-15T23:57:47</td>
+            <td>2026-07-15 21:58:21</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">26</td>
+            <td style="text-align:right">1,094</td>
+        </tr><tr>
+            <td>2026-07-14T10:35:32</td>
+            <td>2026-07-14 08:35:32</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-07-14T03:01:22</td>
+            <td>2026-07-14 01:01:33</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">5</td>
+            <td style="text-align:right">106</td>
+        </tr><tr>
+            <td>2026-07-12T16:57:07</td>
+            <td>2026-07-12 15:03:30</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">310</td>
+            <td style="text-align:right">13,479</td>
+        </tr><tr>
+            <td>2026-05-30T10:36:16</td>
+            <td>2026-05-30 08:55:51</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">1490</td>
+            <td style="text-align:right">52,916</td>
+        </tr><tr>
+            <td>2026-05-09T04:00:11</td>
+            <td>2026-05-09 02:00:11</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-05-09T03:00:30</td>
+            <td>2026-05-09 01:02:33</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">170</td>
+            <td style="text-align:right">5,577</td>
+        </tr><tr>
+            <td>2026-05-08T04:00:23</td>
+            <td>2026-05-08 02:00:23</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-05-08T03:00:49</td>
+            <td>2026-05-08 01:00:49</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-05-07T04:00:26</td>
+            <td>2026-05-07 02:00:26</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-05-07T03:00:40</td>
+            <td>2026-05-07 01:00:40</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-05-06T04:00:14</td>
+            <td>2026-05-06 02:00:14</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-05-06T03:00:53</td>
+            <td>2026-05-06 01:02:25</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">84</td>
+            <td style="text-align:right">2,843</td>
+        </tr><tr>
+            <td>2026-05-05T04:00:09</td>
+            <td>2026-05-05 02:00:09</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr><tr>
+            <td>2026-05-05T03:00:27</td>
+            <td>2026-05-05 01:01:37</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">88</td>
+            <td style="text-align:right">3,019</td>
+        </tr><tr>
+            <td>2026-05-02T03:00:56</td>
+            <td>2026-05-02 01:04:15</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">163</td>
+            <td style="text-align:right">5,876</td>
+        </tr><tr>
+            <td>2026-05-01T03:00:47</td>
+            <td>2026-05-01 01:00:47</td>
+            <td>delta_update</td>
+            <td><span style="color:#4CAF50;font-weight:bold">done</span></td>
+            <td style="text-align:right">0</td>
+            <td style="text-align:right">0</td>
+        </tr>
+    </table>
+</div>
+
+<div class="footer">
+    <a href="index.html" style="color:#2196F3;text-decoration:none">Dashboard</a>
+    &nbsp;|&nbsp; <a href="details.html?v=1784969379" style="color:#2196F3;text-decoration:none">Update-Details</a>
+    &nbsp;|&nbsp; <a href="ipo.html?v=1784969379" style="color:#2196F3;text-decoration:none">IPO Monitor</a>
+    &nbsp;|&nbsp; Auto-Refresh alle 30 Sekunden &nbsp;|&nbsp; Seite generiert: 2026-07-25 10:49:39
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Offizielle/erzeugte Daten gehen nicht nach Git.
+# company_data.json wird von update_sec_data.py:678 aus sec_data.db erzeugt und
+# ist auf ueber 1 GB gewachsen -- GitHub weist Dateien ab 100 MiB hart ab.
+# Es hat den Push dieses Repos vom 02.04.2026 bis 27.08.2026 blockiert.
+# Die Firmendetailseite braucht stattdessen Einzeldateien je CIK (offen).
+company_data.json

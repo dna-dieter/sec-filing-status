@@ -81,6 +81,34 @@ window.addEventListener('pageshow', function(e) {
 
 
         <div class="card">
+            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
+                <span class="sync-toggle">&#9654;</span>
+                <span style="color:#4CAF50;font-weight:bold">done</span>
+                <span class="meta">2026-10-13T04:00 — 2026-10-13 02:00</span>
+                <span class="meta">0 Firmen, 0 neue Facts</span>
+            </div>
+            <div class="sync-body" style="display:none">
+                <table class="details-table">
+                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Public Float</th><th>Form</th><th>Zeitstempel</th></tr>
+                    <tr><td colspan="6" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card">
+            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
+                <span class="sync-toggle">&#9654;</span>
+                <span style="color:#4CAF50;font-weight:bold">done</span>
+                <span class="meta">2026-10-12T09:37 — 2026-10-12 07:37</span>
+                <span class="meta">0 Firmen, 0 neue Facts</span>
+            </div>
+            <div class="sync-body" style="display:none">
+                <table class="details-table">
+                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Public Float</th><th>Form</th><th>Zeitstempel</th></tr>
+                    <tr><td colspan="6" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="card">
             <div class="sync-header open" onclick="toggleSync(this)" style="cursor:pointer">
                 <span class="sync-toggle">&#9660;</span>
                 <span style="color:#4CAF50;font-weight:bold">done</span>
@@ -93,7 +121,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=723125&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MU</b></a>
+                        <a href="company.html?cik=723125&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MU</b></a>
                     </td>
                     <td>MICRON TECHNOLOGY INC</td>
                     <td style="text-align:right;color:#888">368.1B</td>
@@ -464,7 +492,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=27904&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>DAL</b></a>
+                        <a href="company.html?cik=27904&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>DAL</b></a>
                     </td>
                     <td>DELTA AIR LINES, INC.</td>
                     <td style="text-align:right;color:#888">32.1B</td>
@@ -884,7 +912,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=96223&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>JEF</b></a>
+                        <a href="company.html?cik=96223&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>JEF</b></a>
                     </td>
                     <td>Jefferies Financial Group Inc.</td>
                     <td style="text-align:right;color:#888">8.2B</td>
@@ -1178,7 +1206,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=108516&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>WOR</b></a>
+                        <a href="company.html?cik=108516&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>WOR</b></a>
                     </td>
                     <td>WORTHINGTON ENTERPRISES, INC.</td>
                     <td style="text-align:right;color:#888">1.8B</td>
@@ -1430,7 +1458,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2047455&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>QSEA</b></a>
+                        <a href="company.html?cik=2047455&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>QSEA</b></a>
                     </td>
                     <td>Quartzsea Acquisition Corp</td>
                     <td style="text-align:right;color:#888">85M</td>
@@ -1682,7 +1710,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1930021&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>HOVR</b></a>
+                        <a href="company.html?cik=1930021&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>HOVR</b></a>
                     </td>
                     <td>New Horizon Aircraft Ltd.</td>
                     <td style="text-align:right;color:#888">72M</td>
@@ -1906,7 +1934,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=862692&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CCEL</b></a>
+                        <a href="company.html?cik=862692&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CCEL</b></a>
                     </td>
                     <td>CRYO CELL INTERNATIONAL INC</td>
                     <td style="text-align:right;color:#888">27M</td>
@@ -2242,7 +2270,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1958928&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CTWO</b></a>
+                        <a href="company.html?cik=1958928&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CTWO</b></a>
                     </td>
                     <td>COTWO ADVISORS PHYSICAL EUROPEAN CARBON ALLOWANCE TRUST</td>
                     <td style="text-align:right;color:#888">2M</td>
@@ -2417,7 +2445,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2051985&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>IRHO</b></a>
+                        <a href="company.html?cik=2051985&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>IRHO</b></a>
                     </td>
                     <td>Iron Horse Acquisition II Corp.</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -2704,7 +2732,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=909832&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>COST</b></a>
+                        <a href="company.html?cik=909832&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>COST</b></a>
                     </td>
                     <td>COSTCO WHOLESALE CORP /NEW</td>
                     <td style="text-align:right;color:#888">451.6B</td>
@@ -3054,7 +3082,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=723254&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CTAS</b></a>
+                        <a href="company.html?cik=723254&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CTAS</b></a>
                     </td>
                     <td>CINTAS CORP</td>
                     <td style="text-align:right;color:#888">74.4B</td>
@@ -3768,7 +3796,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=16918&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>STZ</b></a>
+                        <a href="company.html?cik=16918&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>STZ</b></a>
                     </td>
                     <td>CONSTELLATION BRANDS, INC.</td>
                     <td style="text-align:right;color:#888">24.9B</td>
@@ -4034,7 +4062,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1144879&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>APLD</b></a>
+                        <a href="company.html?cik=1144879&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>APLD</b></a>
                     </td>
                     <td>Applied Digital Corp.</td>
                     <td style="text-align:right;color:#888">6.9B</td>
@@ -4314,7 +4342,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1803599&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CNXC</b></a>
+                        <a href="company.html?cik=1803599&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CNXC</b></a>
                     </td>
                     <td>Concentrix Corp</td>
                     <td style="text-align:right;color:#888">2.9B</td>
@@ -4713,7 +4741,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=94845&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>LEVI</b></a>
+                        <a href="company.html?cik=94845&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>LEVI</b></a>
                     </td>
                     <td>LEVI STRAUSS & CO</td>
                     <td style="text-align:right;color:#888">1.8B</td>
@@ -5077,7 +5105,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=711377&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NEOG</b></a>
+                        <a href="company.html?cik=711377&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NEOG</b></a>
                     </td>
                     <td>NEOGEN CORP</td>
                     <td style="text-align:right;color:#888">972M</td>
@@ -5336,7 +5364,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1084765&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>RGP</b></a>
+                        <a href="company.html?cik=1084765&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>RGP</b></a>
                     </td>
                     <td>RESOURCES CONNECTION, INC.</td>
                     <td style="text-align:right;color:#888">150M</td>
@@ -5679,7 +5707,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=110621&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>RPM</b></a>
+                        <a href="company.html?cik=110621&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>RPM</b></a>
                     </td>
                     <td>RPM INTERNATIONAL INC/DE/</td>
                     <td style="text-align:right;color:#888">13.6B</td>
@@ -5938,7 +5966,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1679273&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>LW</b></a>
+                        <a href="company.html?cik=1679273&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>LW</b></a>
                     </td>
                     <td>Lamb Weston Holdings, Inc.</td>
                     <td style="text-align:right;color:#888">8.0B</td>
@@ -6176,7 +6204,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=6845&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>APOG</b></a>
+                        <a href="company.html?cik=6845&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>APOG</b></a>
                     </td>
                     <td>APOGEE ENTERPRISES, INC.</td>
                     <td style="text-align:right;color:#888">915M</td>
@@ -6582,7 +6610,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1377936&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>SAJ</b></a>
+                        <a href="company.html?cik=1377936&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>SAJ</b></a>
                     </td>
                     <td>SARATOGA INVESTMENT CORP.</td>
                     <td style="text-align:right;color:#888">351M</td>
@@ -6848,7 +6876,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2000775&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>BKHA</b></a>
+                        <a href="company.html?cik=2000775&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>BKHA</b></a>
                     </td>
                     <td>Black Hawk Acquisition Corp</td>
                     <td style="text-align:right;color:#888">74M</td>
@@ -7044,7 +7072,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1718500&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>AXIL</b></a>
+                        <a href="company.html?cik=1718500&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>AXIL</b></a>
                     </td>
                     <td>Axil Brands, Inc.</td>
                     <td style="text-align:right;color:#888">21M</td>
@@ -7310,7 +7338,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=33002&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>EBF</b></a>
+                        <a href="company.html?cik=33002&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>EBF</b></a>
                     </td>
                     <td>ENNIS, INC.</td>
                     <td style="text-align:right;color:#888">454M</td>
@@ -7688,7 +7716,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=320187&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NKE</b></a>
+                        <a href="company.html?cik=320187&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NKE</b></a>
                     </td>
                     <td>NIKE, Inc.</td>
                     <td style="text-align:right;color:#888">80.5B</td>
@@ -7926,7 +7954,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=920760&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>LEN</b></a>
+                        <a href="company.html?cik=920760&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>LEN</b></a>
                     </td>
                     <td>LENNAR CORP /NEW/</td>
                     <td style="text-align:right;color:#888">24.6B</td>
@@ -8136,7 +8164,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=940944&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>DRI</b></a>
+                        <a href="company.html?cik=940944&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>DRI</b></a>
                     </td>
                     <td>DARDEN RESTAURANTS INC</td>
                     <td style="text-align:right;color:#888">20.1B</td>
@@ -8409,7 +8437,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=96536&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>TAYD</b></a>
+                        <a href="company.html?cik=96536&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>TAYD</b></a>
                     </td>
                     <td>TAYLOR DEVICES, INC.</td>
                     <td style="text-align:right;color:#888">157M</td>
@@ -8675,7 +8703,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1543418&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>TMQ</b></a>
+                        <a href="company.html?cik=1543418&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>TMQ</b></a>
                     </td>
                     <td>Trilogy Metals Inc.</td>
                     <td style="text-align:right;color:#888">121M</td>
@@ -8990,7 +9018,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1756180&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NCRA</b></a>
+                        <a href="company.html?cik=1756180&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NCRA</b></a>
                     </td>
                     <td>NOCERA, INC.</td>
                     <td style="text-align:right;color:#888">14M</td>
@@ -9347,7 +9375,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1830072&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>IPW</b></a>
+                        <a href="company.html?cik=1830072&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>IPW</b></a>
                     </td>
                     <td>iPower Inc.</td>
                     <td style="text-align:right;color:#888">4M</td>
@@ -9578,7 +9606,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2137679&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>OCLT</b></a>
+                        <a href="company.html?cik=2137679&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>OCLT</b></a>
                     </td>
                     <td>OceanLight Acquisition Corp</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -9697,7 +9725,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=63754&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MKC</b></a>
+                        <a href="company.html?cik=63754&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MKC</b></a>
                     </td>
                     <td>MCCORMICK & CO INC</td>
                     <td style="text-align:right;color:#888">19.4B</td>
@@ -10047,7 +10075,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1177394&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>SNX</b></a>
+                        <a href="company.html?cik=1177394&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>SNX</b></a>
                     </td>
                     <td>TD SYNNEX CORP</td>
                     <td style="text-align:right;color:#888">8.7B</td>
@@ -10439,7 +10467,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2134856&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>XTER</b></a>
+                        <a href="company.html?cik=2134856&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>XTER</b></a>
                     </td>
                     <td>Karman Line Acquisition Corp.</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -10572,7 +10600,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1170010&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>KMX</b></a>
+                        <a href="company.html?cik=1170010&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>KMX</b></a>
                     </td>
                     <td>CARMAX INC</td>
                     <td style="text-align:right;color:#888">9.1B</td>
@@ -10943,7 +10971,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=23217&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CAG</b></a>
+                        <a href="company.html?cik=23217&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CAG</b></a>
                     </td>
                     <td>CONAGRA BRANDS INC.</td>
                     <td style="text-align:right;color:#888">8.5B</td>
@@ -11195,7 +11223,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=16160&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CALM</b></a>
+                        <a href="company.html?cik=16160&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CALM</b></a>
                     </td>
                     <td>CAL-MAINE FOODS INC</td>
                     <td style="text-align:right;color:#888">3.8B</td>
@@ -11447,7 +11475,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=876167&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>PRGS</b></a>
+                        <a href="company.html?cik=876167&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>PRGS</b></a>
                     </td>
                     <td>PROGRESS SOFTWARE CORP /MA</td>
                     <td style="text-align:right;color:#888">2.6B</td>
@@ -11825,7 +11853,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1852551&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NVA</b></a>
+                        <a href="company.html?cik=1852551&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NVA</b></a>
                     </td>
                     <td>Nova Minerals Corp</td>
                     <td style="text-align:right;color:#888">223M</td>
@@ -12042,7 +12070,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=10329&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>BSET</b></a>
+                        <a href="company.html?cik=10329&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>BSET</b></a>
                     </td>
                     <td>BASSETT FURNITURE INDUSTRIES INC</td>
                     <td style="text-align:right;color:#888">134M</td>
@@ -12392,7 +12420,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=5981&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>AVD</b></a>
+                        <a href="company.html?cik=5981&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>AVD</b></a>
                     </td>
                     <td>AMERICAN VANGUARD CORP</td>
                     <td style="text-align:right;color:#888">111M</td>
@@ -12693,7 +12721,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1852973&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>BRLS</b></a>
+                        <a href="company.html?cik=1852973&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>BRLS</b></a>
                     </td>
                     <td>Borealis Foods Inc.</td>
                     <td style="text-align:right;color:#888">31M</td>
@@ -12938,7 +12966,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=885462&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>GURE</b></a>
+                        <a href="company.html?cik=885462&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>GURE</b></a>
                     </td>
                     <td>GULF RESOURCES, INC.</td>
                     <td style="text-align:right;color:#888">7M</td>
@@ -14016,7 +14044,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2079013&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>HCAC</b></a>
+                        <a href="company.html?cik=2079013&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>HCAC</b></a>
                     </td>
                     <td>Hall Chadwick Acquisition Corp</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -14296,7 +14324,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=900075&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CPRT</b></a>
+                        <a href="company.html?cik=900075&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CPRT</b></a>
                     </td>
                     <td>COPART INC</td>
                     <td style="text-align:right;color:#888">35.7B</td>
@@ -14562,7 +14590,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=815097&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CCL</b></a>
+                        <a href="company.html?cik=815097&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CCL</b></a>
                     </td>
                     <td>Carnival Corp Ltd.</td>
                     <td style="text-align:right;color:#888">25.1B</td>
@@ -14877,7 +14905,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1334933&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>UEC</b></a>
+                        <a href="company.html?cik=1334933&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>UEC</b></a>
                     </td>
                     <td>URANIUM ENERGY CORP</td>
                     <td style="text-align:right;color:#888">8.3B</td>
@@ -15227,7 +15255,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1750&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>AIR</b></a>
+                        <a href="company.html?cik=1750&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>AIR</b></a>
                     </td>
                     <td>AAR CORP</td>
                     <td style="text-align:right;color:#888">3.2B</td>
@@ -15437,7 +15465,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1005731&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>IDT</b></a>
+                        <a href="company.html?cik=1005731&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>IDT</b></a>
                     </td>
                     <td>IDT CORP</td>
                     <td style="text-align:right;color:#888">915M</td>
@@ -15752,12 +15780,12 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1275187&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>ANGO</b></a>
+                        <a href="company.html?cik=1275187&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>ANGO</b></a>
                     </td>
                     <td>ANGIODYNAMICS INC</td>
                     <td style="text-align:right;color:#888">436M</td>
                     <td style="text-align:right">8</td>
-                    <td style="color:#888">10-K/A</td>
+                    <td style="color:#888">10-Q</td>
                     <td style="color:#888">2026-09-30T04:01</td>
                 </tr><tr class="facts-container" style="display:none"><td colspan="4">
                         <table class="facts-table">
@@ -15822,7 +15850,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1850059&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>FSHP</b></a>
+                        <a href="company.html?cik=1850059&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>FSHP</b></a>
                     </td>
                     <td>Flag Ship Acquisition Corp</td>
                     <td style="text-align:right;color:#888">72M</td>
@@ -15990,7 +16018,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1752828&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CELU</b></a>
+                        <a href="company.html?cik=1752828&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CELU</b></a>
                     </td>
                     <td>Celularity Inc</td>
                     <td style="text-align:right;color:#888">28M</td>
@@ -16228,7 +16256,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=885462&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>GURE</b></a>
+                        <a href="company.html?cik=885462&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>GURE</b></a>
                     </td>
                     <td>GULF RESOURCES, INC.</td>
                     <td style="text-align:right;color:#888">7M</td>
@@ -16473,7 +16501,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1422892&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>SGLY</b></a>
+                        <a href="company.html?cik=1422892&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>SGLY</b></a>
                     </td>
                     <td>Singularity Future Technology Ltd.</td>
                     <td style="text-align:right;color:#888">5M</td>
@@ -16718,7 +16746,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2076192&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>WSTN</b></a>
+                        <a href="company.html?cik=2076192&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>WSTN</b></a>
                     </td>
                     <td>Westin Acquisition Corp</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -16858,7 +16886,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=812011&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MTN</b></a>
+                        <a href="company.html?cik=812011&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MTN</b></a>
                     </td>
                     <td>VAIL RESORTS INC</td>
                     <td style="text-align:right;color:#888">4.7B</td>
@@ -17187,7 +17215,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=66382&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MLKN</b></a>
+                        <a href="company.html?cik=66382&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MLKN</b></a>
                     </td>
                     <td>MILLERKNOLL, INC.</td>
                     <td style="text-align:right;color:#888">1.1B</td>
@@ -17502,7 +17530,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=50471&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>TRAK</b></a>
+                        <a href="company.html?cik=50471&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>TRAK</b></a>
                     </td>
                     <td>ReposiTrak, Inc.</td>
                     <td style="text-align:right;color:#888">158M</td>
@@ -17726,7 +17754,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1956741&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>ZONE</b></a>
+                        <a href="company.html?cik=1956741&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>ZONE</b></a>
                     </td>
                     <td>CleanCore Solutions, Inc.</td>
                     <td style="text-align:right;color:#888">52M</td>
@@ -17936,7 +17964,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1262104&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>LITS</b></a>
+                        <a href="company.html?cik=1262104&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>LITS</b></a>
                     </td>
                     <td>Lite Strategy, Inc.</td>
                     <td style="text-align:right;color:#888">43M</td>
@@ -18181,7 +18209,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=722572&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>FKWL</b></a>
+                        <a href="company.html?cik=722572&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>FKWL</b></a>
                     </td>
                     <td>FRANKLIN WIRELESS CORP</td>
                     <td style="text-align:right;color:#888">38M</td>
@@ -18426,7 +18454,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1039280&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NTWK</b></a>
+                        <a href="company.html?cik=1039280&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NTWK</b></a>
                     </td>
                     <td>NETSOL TECHNOLOGIES INC</td>
                     <td style="text-align:right;color:#888">30M</td>
@@ -18706,7 +18734,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=911216&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>PTN</b></a>
+                        <a href="company.html?cik=911216&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>PTN</b></a>
                     </td>
                     <td>PALATIN TECHNOLOGIES INC</td>
                     <td style="text-align:right;color:#888">26M</td>
@@ -18965,7 +18993,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=867840&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>POCI</b></a>
+                        <a href="company.html?cik=867840&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>POCI</b></a>
                     </td>
                     <td>PRECISION OPTICS CORPORATION, INC.</td>
                     <td style="text-align:right;color:#888">26M</td>
@@ -19238,7 +19266,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1379006&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NNVC</b></a>
+                        <a href="company.html?cik=1379006&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NNVC</b></a>
                     </td>
                     <td>NANOVIRICIDES, INC.</td>
                     <td style="text-align:right;color:#888">24M</td>
@@ -19469,7 +19497,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=69422&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>INTG</b></a>
+                        <a href="company.html?cik=69422&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>INTG</b></a>
                     </td>
                     <td>INTERGROUP CORP</td>
                     <td style="text-align:right;color:#888">17M</td>
@@ -19679,7 +19707,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1854445&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>GGRP</b></a>
+                        <a href="company.html?cik=1854445&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>GGRP</b></a>
                     </td>
                     <td>Glimpse Group, Inc.</td>
                     <td style="text-align:right;color:#888">17M</td>
@@ -19931,7 +19959,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2013807&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>FOXX</b></a>
+                        <a href="company.html?cik=2013807&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>FOXX</b></a>
                     </td>
                     <td>Foxx Development Holdings Inc.</td>
                     <td style="text-align:right;color:#888">13M</td>
@@ -20197,7 +20225,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1842556&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>EONR</b></a>
+                        <a href="company.html?cik=1842556&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>EONR</b></a>
                     </td>
                     <td>EON Resources Inc.</td>
                     <td style="text-align:right;color:#888">11M</td>
@@ -20428,7 +20456,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1972529&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>BTOC</b></a>
+                        <a href="company.html?cik=1972529&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>BTOC</b></a>
                     </td>
                     <td>Armlogi Holding Corp.</td>
                     <td style="text-align:right;color:#888">8M</td>
@@ -20694,7 +20722,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1550913&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MKZR</b></a>
+                        <a href="company.html?cik=1550913&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MKZR</b></a>
                     </td>
                     <td>MacKenzie Realty Capital, Inc.</td>
                     <td style="text-align:right;color:#888">7M</td>
@@ -20974,7 +21002,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=73290&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>BMRA</b></a>
+                        <a href="company.html?cik=73290&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>BMRA</b></a>
                     </td>
                     <td>BIOMERICA INC</td>
                     <td style="text-align:right;color:#888">7M</td>
@@ -20995,7 +21023,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=787253&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NAII</b></a>
+                        <a href="company.html?cik=787253&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NAII</b></a>
                     </td>
                     <td>NATURAL ALTERNATIVES INTERNATIONAL INC</td>
                     <td style="text-align:right;color:#888">6M</td>
@@ -21247,7 +21275,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1770236&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MITQ</b></a>
+                        <a href="company.html?cik=1770236&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MITQ</b></a>
                     </td>
                     <td>MOVING iMAGE TECHNOLOGIES INC.</td>
                     <td style="text-align:right;color:#888">4M</td>
@@ -21485,7 +21513,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2076192&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>WSTN</b></a>
+                        <a href="company.html?cik=2076192&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>WSTN</b></a>
                     </td>
                     <td>Westin Acquisition Corp</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -21765,7 +21793,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1926314&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>OCAC</b></a>
+                        <a href="company.html?cik=1926314&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>OCAC</b></a>
                     </td>
                     <td>Ocean Capital Acquisition Corp</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -21940,7 +21968,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1633369&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CAST</b></a>
+                        <a href="company.html?cik=1633369&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CAST</b></a>
                     </td>
                     <td>FreeCast, Inc.</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -22178,7 +22206,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2131040&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>RVII</b></a>
+                        <a href="company.html?cik=2131040&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>RVII</b></a>
                     </td>
                     <td>Robinhood Ventures Fund II</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -22290,7 +22318,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=29644&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>DCI</b></a>
+                        <a href="company.html?cik=29644&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>DCI</b></a>
                     </td>
                     <td>DONALDSON Co INC</td>
                     <td style="text-align:right;color:#888">11.7B</td>
@@ -22633,7 +22661,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=866729&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>SCHL</b></a>
+                        <a href="company.html?cik=866729&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>SCHL</b></a>
                     </td>
                     <td>SCHOLASTIC CORP</td>
                     <td style="text-align:right;color:#888">707M</td>
@@ -22920,7 +22948,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1067294&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>CBRL</b></a>
+                        <a href="company.html?cik=1067294&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>CBRL</b></a>
                     </td>
                     <td>CRACKER BARREL OLD COUNTRY STORE, INC</td>
                     <td style="text-align:right;color:#888">670M</td>
@@ -23249,7 +23277,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1512228&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>NB</b></a>
+                        <a href="company.html?cik=1512228&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>NB</b></a>
                     </td>
                     <td>NIOCORP DEVELOPMENTS LTD</td>
                     <td style="text-align:right;color:#888">622M</td>
@@ -23473,7 +23501,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1997652&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>TBN</b></a>
+                        <a href="company.html?cik=1997652&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>TBN</b></a>
                     </td>
                     <td>Tamboran Resources Corp</td>
                     <td style="text-align:right;color:#888">468M</td>
@@ -23732,7 +23760,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1873875&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>IXHL</b></a>
+                        <a href="company.html?cik=1873875&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>IXHL</b></a>
                     </td>
                     <td>Incannex Healthcare Inc.</td>
                     <td style="text-align:right;color:#888">124M</td>
@@ -23970,7 +23998,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1951276&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>SRBK</b></a>
+                        <a href="company.html?cik=1951276&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>SRBK</b></a>
                     </td>
                     <td>SR Bancorp, Inc.</td>
                     <td style="text-align:right;color:#888">120M</td>
@@ -24180,7 +24208,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1500375&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>HFBL</b></a>
+                        <a href="company.html?cik=1500375&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>HFBL</b></a>
                     </td>
                     <td>Home Federal Bancorp, Inc. of Louisiana</td>
                     <td style="text-align:right;color:#888">38M</td>
@@ -24376,7 +24404,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1996192&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>QNME</b></a>
+                        <a href="company.html?cik=1996192&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>QNME</b></a>
                     </td>
                     <td>Quanome Technologies, Inc.</td>
                     <td style="text-align:right;color:#888">31M</td>
@@ -24600,7 +24628,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2033770&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>DAIC</b></a>
+                        <a href="company.html?cik=2033770&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>DAIC</b></a>
                     </td>
                     <td>CID Holdco, Inc.</td>
                     <td style="text-align:right;color:#888">7M</td>
@@ -24978,7 +25006,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1001907&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>ASTC</b></a>
+                        <a href="company.html?cik=1001907&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>ASTC</b></a>
                     </td>
                     <td>ASTROTECH Corp</td>
                     <td style="text-align:right;color:#888">5M</td>
@@ -25216,7 +25244,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1517681&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>PPCB</b></a>
+                        <a href="company.html?cik=1517681&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>PPCB</b></a>
                     </td>
                     <td>Propanc Biopharma, Inc.</td>
                     <td style="text-align:right;color:#888">3M</td>
@@ -25440,7 +25468,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1610940&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>BDRY</b></a>
+                        <a href="company.html?cik=1610940&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>BDRY</b></a>
                     </td>
                     <td>Amplify Commodity Trust</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -25566,7 +25594,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=796343&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>ADBE</b></a>
+                        <a href="company.html?cik=796343&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>ADBE</b></a>
                     </td>
                     <td>ADOBE INC.</td>
                     <td style="text-align:right;color:#888">144.9B</td>
@@ -25958,7 +25986,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=730263&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>THO</b></a>
+                        <a href="company.html?cik=730263&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>THO</b></a>
                     </td>
                     <td>THOR INDUSTRIES INC</td>
                     <td style="text-align:right;color:#888">5.6B</td>
@@ -26273,7 +26301,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1674440&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>YYAI</b></a>
+                        <a href="company.html?cik=1674440&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>YYAI</b></a>
                     </td>
                     <td>AIRWA INC.</td>
                     <td style="text-align:right;color:#888">43M</td>
@@ -26497,7 +26525,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1385818&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>AYTU</b></a>
+                        <a href="company.html?cik=1385818&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>AYTU</b></a>
                     </td>
                     <td>AYTU BIOPHARMA, INC</td>
                     <td style="text-align:right;color:#888">24M</td>
@@ -26735,7 +26763,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2030522&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MWYN</b></a>
+                        <a href="company.html?cik=2030522&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MWYN</b></a>
                     </td>
                     <td>Marwynn Holdings, Inc.</td>
                     <td style="text-align:right;color:#888">8M</td>
@@ -26798,7 +26826,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1775194&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>UPXI</b></a>
+                        <a href="company.html?cik=1775194&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>UPXI</b></a>
                     </td>
                     <td>UPEXI, INC.</td>
                     <td style="text-align:right;color:#888">101M</td>
@@ -27050,7 +27078,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1629210&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>PZG</b></a>
+                        <a href="company.html?cik=1629210&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>PZG</b></a>
                     </td>
                     <td>Paramount Gold Nevada Corp.</td>
                     <td style="text-align:right;color:#888">80M</td>
@@ -27288,7 +27316,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1888654&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>FEAM</b></a>
+                        <a href="company.html?cik=1888654&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>FEAM</b></a>
                     </td>
                     <td>5E Advanced Materials, Inc.</td>
                     <td style="text-align:right;color:#888">21M</td>
@@ -27540,7 +27568,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1903784&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>VOGX</b></a>
+                        <a href="company.html?cik=1903784&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>VOGX</b></a>
                     </td>
                     <td>Vogenx, Inc.</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -27834,7 +27862,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2066824&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>VBNB</b></a>
+                        <a href="company.html?cik=2066824&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>VBNB</b></a>
                     </td>
                     <td>VanEck BNB ETF</td>
                     <td style="text-align:right;color:#888">-</td>
@@ -27904,7 +27932,7 @@ window.addEventListener('pageshow', function(e) {
                     <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1828805&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>ALMU</b></a>
+                        <a href="company.html?cik=1828805&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>ALMU</b></a>
                     </td>
                     <td>Aeluma, Inc.</td>
                     <td style="text-align:right;color:#888">276M</td>
@@ -28156,7 +28184,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1006655&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>EPM</b></a>
+                        <a href="company.html?cik=1006655&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>EPM</b></a>
                     </td>
                     <td>EVOLUTION PETROLEUM CORP</td>
                     <td style="text-align:right;color:#888">111M</td>
@@ -28408,7 +28436,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2047235&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>WSBK</b></a>
+                        <a href="company.html?cik=2047235&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>WSBK</b></a>
                     </td>
                     <td>Winchester Bancorp, Inc./MD/</td>
                     <td style="text-align:right;color:#888">38M</td>
@@ -28604,7 +28632,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1419275&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>RTB</b></a>
+                        <a href="company.html?cik=1419275&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>RTB</b></a>
                     </td>
                     <td>RTB Digital, Inc.</td>
                     <td style="text-align:right;color:#888">9M</td>
@@ -29038,7 +29066,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1835385&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>MBBC</b></a>
+                        <a href="company.html?cik=1835385&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>MBBC</b></a>
                     </td>
                     <td>Marathon Bancorp, Inc. /MD/</td>
                     <td style="text-align:right;color:#888">7M</td>
@@ -29220,7 +29248,7 @@ window.addEventListener('pageshow', function(e) {
                         </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
                     <td>
                         <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=82473&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>IHT</b></a>
+                        <a href="company.html?cik=82473&v=1791856829" onclick="event.stopPropagation()" class="company-link"><b>IHT</b></a>
                     </td>
                     <td>INNSUITES HOSPITALITY TRUST</td>
                     <td style="text-align:right;color:#888">4M</td>
@@ -29536,982 +29564,9 @@ window.addEventListener('pageshow', function(e) {
                 </table>
             </div>
         </div>
-        <div class="card">
-            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
-                <span class="sync-toggle">&#9654;</span>
-                <span style="color:#4CAF50;font-weight:bold">done</span>
-                <span class="meta">2026-09-16T04:00 — 2026-09-16 02:01</span>
-                <span class="meta">3 Firmen, 129 neue Facts</span>
-            </div>
-            <div class="sync-body" style="display:none">
-                <table class="details-table">
-                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Public Float</th><th style="text-align:right">Neue Facts</th><th>Form</th><th>Zeitstempel</th></tr>
-                    <tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td>
-                        <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1948455&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>ISPR</b></a>
-                    </td>
-                    <td>Ispire Technology Inc.</td>
-                    <td style="text-align:right;color:#888">54M</td>
-                    <td style="text-align:right">36</td>
-                    <td style="color:#888">10-K</td>
-                    <td style="color:#888">2026-09-16T04:00</td>
-                </tr><tr class="facts-container" style="display:none"><td colspan="4">
-                        <table class="facts-table">
-                        <tr><th>Concept</th><th style="text-align:right">Wert</th><th>Einheit</th><th>Stichtag</th><th>Filed</th><th>Form</th></tr>
-                        <tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Assets</td>
-                        <td style="text-align:right">102,217,131</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Assets</td>
-                        <td style="text-align:right">64,278,571</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">AssetsCurrent</td>
-                        <td style="text-align:right">72,908,385</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">AssetsCurrent</td>
-                        <td style="text-align:right">45,434,650</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CashAndCashEquivalentsAtCarryingValue</td>
-                        <td style="text-align:right">24,351,765</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CashAndCashEquivalentsAtCarryingValue</td>
-                        <td style="text-align:right">19,328,650</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CommonStockSharesOutstanding</td>
-                        <td style="text-align:right">57,193,734</td>
-                        <td>shares</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CommonStockSharesOutstanding</td>
-                        <td style="text-align:right">57,609,396</td>
-                        <td>shares</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareBasic</td>
-                        <td style="text-align:right">-0.69</td>
-                        <td>USD/shares</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareBasic</td>
-                        <td style="text-align:right">-0.58</td>
-                        <td>USD/shares</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareDiluted</td>
-                        <td style="text-align:right">-0.69</td>
-                        <td>USD/shares</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareDiluted</td>
-                        <td style="text-align:right">-0.58</td>
-                        <td>USD/shares</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EntityPublicFloat</td>
-                        <td style="text-align:right">53,618,575</td>
-                        <td>USD</td>
-                        <td>2025-12-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">22,649,671</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">12,298,047</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Liabilities</td>
-                        <td style="text-align:right">101,612,437</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Liabilities</td>
-                        <td style="text-align:right">93,524,778</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LiabilitiesCurrent</td>
-                        <td style="text-align:right">72,539,554</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LiabilitiesCurrent</td>
-                        <td style="text-align:right">44,631,529</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">1,853,161</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">-1,321,017</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-5,198,605</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-3,082,454</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">-7,374,085</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">-569,416</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-39,240,226</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-33,204,044</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">-37,849,859</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">-32,592,524</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Revenues</td>
-                        <td style="text-align:right">127,494,304</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Revenues</td>
-                        <td style="text-align:right">96,014,610</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">StockholdersEquity</td>
-                        <td style="text-align:right">34,456,340</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">StockholdersEquity</td>
-                        <td style="text-align:right">604,694</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">StockholdersEquity</td>
-                        <td style="text-align:right">-29,246,207</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">WeightedAverageNumberOfSharesOutstandingBasic</td>
-                        <td style="text-align:right">56,853,552</td>
-                        <td>shares</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">WeightedAverageNumberOfSharesOutstandingBasic</td>
-                        <td style="text-align:right">57,306,470</td>
-                        <td>shares</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr>
-                        </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td>
-                        <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=1495320&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>VRA</b></a>
-                    </td>
-                    <td>Vera Bradley, Inc.</td>
-                    <td style="text-align:right;color:#888">40M</td>
-                    <td style="text-align:right">50</td>
-                    <td style="color:#888">10-Q</td>
-                    <td style="color:#888">2026-09-16T04:00</td>
-                </tr><tr class="facts-container" style="display:none"><td colspan="4">
-                        <table class="facts-table">
-                        <tr><th>Concept</th><th style="text-align:right">Wert</th><th>Einheit</th><th>Stichtag</th><th>Filed</th><th>Form</th></tr>
-                        <tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Assets</td>
-                        <td style="text-align:right">234,005,000</td>
-                        <td>USD</td>
-                        <td>2026-01-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Assets</td>
-                        <td style="text-align:right">239,273,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">AssetsCurrent</td>
-                        <td style="text-align:right">119,721,000</td>
-                        <td>USD</td>
-                        <td>2026-01-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">AssetsCurrent</td>
-                        <td style="text-align:right">125,846,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CashAndCashEquivalentsAtCarryingValue</td>
-                        <td style="text-align:right">18,513,000</td>
-                        <td>USD</td>
-                        <td>2026-01-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CashAndCashEquivalentsAtCarryingValue</td>
-                        <td style="text-align:right">34,249,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CommonStockSharesOutstanding</td>
-                        <td style="text-align:right">27,966,000</td>
-                        <td>shares</td>
-                        <td>2026-01-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CommonStockSharesOutstanding</td>
-                        <td style="text-align:right">28,684,000</td>
-                        <td>shares</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareBasic</td>
-                        <td style="text-align:right">-1</td>
-                        <td>USD/shares</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareBasic</td>
-                        <td style="text-align:right">-0.17</td>
-                        <td>USD/shares</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareBasic</td>
-                        <td style="text-align:right">-0.01</td>
-                        <td>USD/shares</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareBasic</td>
-                        <td style="text-align:right">0.16</td>
-                        <td>USD/shares</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareDiluted</td>
-                        <td style="text-align:right">-1</td>
-                        <td>USD/shares</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareDiluted</td>
-                        <td style="text-align:right">-0.17</td>
-                        <td>USD/shares</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareDiluted</td>
-                        <td style="text-align:right">-0.01</td>
-                        <td>USD/shares</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EarningsPerShareDiluted</td>
-                        <td style="text-align:right">0.15</td>
-                        <td>USD/shares</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">58,264,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">35,497,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">71,645,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">42,814,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Liabilities</td>
-                        <td style="text-align:right">102,366,000</td>
-                        <td>USD</td>
-                        <td>2026-01-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Liabilities</td>
-                        <td style="text-align:right">106,948,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LiabilitiesCurrent</td>
-                        <td style="text-align:right">50,450,000</td>
-                        <td>USD</td>
-                        <td>2026-01-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LiabilitiesCurrent</td>
-                        <td style="text-align:right">51,551,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">9,800,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">-930,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-1,576,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-1,038,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">-23,298,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">17,721,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-33,460,000</td>
-                        <td>USD</td>
-                        <td>2025-05-03</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-38,132,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-4,672,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-4,825,000</td>
-                        <td>USD</td>
-                        <td>2026-05-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-325,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">4,500,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">-22,449,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">-4,592,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">-468,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">4,180,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">122,510,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">70,858,000</td>
-                        <td>USD</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">127,351,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">71,649,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">StockholdersEquity</td>
-                        <td style="text-align:right">131,639,000</td>
-                        <td>USD</td>
-                        <td>2026-01-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">StockholdersEquity</td>
-                        <td style="text-align:right">132,325,000</td>
-                        <td>USD</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">WeightedAverageNumberOfSharesOutstandingBasic</td>
-                        <td style="text-align:right">27,854,000</td>
-                        <td>shares</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">WeightedAverageNumberOfSharesOutstandingBasic</td>
-                        <td style="text-align:right">27,935,000</td>
-                        <td>shares</td>
-                        <td>2025-08-02</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">WeightedAverageNumberOfSharesOutstandingBasic</td>
-                        <td style="text-align:right">28,337,000</td>
-                        <td>shares</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">WeightedAverageNumberOfSharesOutstandingBasic</td>
-                        <td style="text-align:right">28,546,000</td>
-                        <td>shares</td>
-                        <td>2026-08-01</td>
-                        <td>2026-09-15</td>
-                        <td>10-Q</td>
-                    </tr>
-                        </table></td></tr><tr class="company-row" onclick="toggleFacts(this)" style="cursor:pointer">
-                    <td>
-                        <span class="toggle-icon">&#9654;</span>
-                        <a href="company.html?cik=2080126&v=1791770419" onclick="event.stopPropagation()" class="company-link"><b>FPS</b></a>
-                    </td>
-                    <td>Forgent Power Solutions, Inc.</td>
-                    <td style="text-align:right;color:#888">-</td>
-                    <td style="text-align:right">43</td>
-                    <td style="color:#888">10-K</td>
-                    <td style="color:#888">2026-09-16T04:00</td>
-                </tr><tr class="facts-container" style="display:none"><td colspan="4">
-                        <table class="facts-table">
-                        <tr><th>Concept</th><th style="text-align:right">Wert</th><th>Einheit</th><th>Stichtag</th><th>Filed</th><th>Form</th></tr>
-                        <tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Assets</td>
-                        <td style="text-align:right">1,536,686,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Assets</td>
-                        <td style="text-align:right">2,230,765,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">AssetsCurrent</td>
-                        <td style="text-align:right">445,147,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">AssetsCurrent</td>
-                        <td style="text-align:right">818,091,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CashAndCashEquivalentsAtCarryingValue</td>
-                        <td style="text-align:right">111,322,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">CashAndCashEquivalentsAtCarryingValue</td>
-                        <td style="text-align:right">97,477,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">EntityPublicFloat</td>
-                        <td style="text-align:right">0.0</td>
-                        <td>USD</td>
-                        <td>2025-12-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">23,814,000</td>
-                        <td>USD</td>
-                        <td>2023-10-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">67,740,000</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">278,066,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">GrossProfit</td>
-                        <td style="text-align:right">497,600,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Liabilities</td>
-                        <td style="text-align:right">963,400,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">Liabilities</td>
-                        <td style="text-align:right">1,559,364,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LiabilitiesCurrent</td>
-                        <td style="text-align:right">281,657,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LiabilitiesCurrent</td>
-                        <td style="text-align:right">531,294,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LongTermDebt</td>
-                        <td style="text-align:right">502,107,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">LongTermDebt</td>
-                        <td style="text-align:right">582,175,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">4,592,000</td>
-                        <td>USD</td>
-                        <td>2023-10-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">935,676,000</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">-35,981,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInFinancingActivities</td>
-                        <td style="text-align:right">17,215,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-1,759,000</td>
-                        <td>USD</td>
-                        <td>2023-10-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-744,650,000</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-84,115,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInInvestingActivities</td>
-                        <td style="text-align:right">-115,905,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">4,733,000</td>
-                        <td>USD</td>
-                        <td>2023-10-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">-4,630,000</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">45,022,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetCashProvidedByUsedInOperatingActivities</td>
-                        <td style="text-align:right">109,081,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">8,461,000</td>
-                        <td>USD</td>
-                        <td>2023-10-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">-17,821,000</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">15,196,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">NetIncomeLoss</td>
-                        <td style="text-align:right">81,845,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">12,400,000</td>
-                        <td>USD</td>
-                        <td>2023-10-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">-4,755,000</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">72,237,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">OperatingIncomeLoss</td>
-                        <td style="text-align:right">182,489,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">64,478,000</td>
-                        <td>USD</td>
-                        <td>2023-10-31</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">181,310,000</td>
-                        <td>USD</td>
-                        <td>2024-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">753,188,000</td>
-                        <td>USD</td>
-                        <td>2025-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">RevenueFromContractWithCustomerExcludingAssessedTax</td>
-                        <td style="text-align:right">1,420,059,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">StockholdersEquity</td>
-                        <td style="text-align:right">564,317,000</td>
-                        <td>USD</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr><tr class="fact-row">
-                        <td style="padding-left:40px;color:#666">WeightedAverageNumberOfSharesOutstandingBasic</td>
-                        <td style="text-align:right">243,532,000</td>
-                        <td>shares</td>
-                        <td>2026-06-30</td>
-                        <td>2026-09-15</td>
-                        <td>10-K</td>
-                    </tr>
-                        </table></td></tr>
-                </table>
-            </div>
-        </div>
-        <div class="card">
-            <div class="sync-header " onclick="toggleSync(this)" style="cursor:pointer">
-                <span class="sync-toggle">&#9654;</span>
-                <span style="color:#4CAF50;font-weight:bold">done</span>
-                <span class="meta">2026-09-15T09:10 — 2026-09-15 07:10</span>
-                <span class="meta">0 Firmen, 0 neue Facts</span>
-            </div>
-            <div class="sync-body" style="display:none">
-                <table class="details-table">
-                    <tr><th>Ticker</th><th>Unternehmen</th><th style="text-align:right">Public Float</th><th>Form</th><th>Zeitstempel</th></tr>
-                    <tr><td colspan="6" style="color:#aaa;text-align:center">Keine neuen Facts in diesem Lauf</td></tr>
-                </table>
-            </div>
-        </div>
 
 <div class="footer">
-    Seite generiert: 2026-10-12 04:00:19
+    Seite generiert: 2026-10-13 04:00:29
 </div>
 
 </div>
